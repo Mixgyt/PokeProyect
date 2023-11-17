@@ -52,9 +52,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pokemons\Tipos\Agua.cs" />
     <Compile Include="Pokemons\Ataques.cs" />
+    <Compile Include="Pokemons\Tipos\Electrico.cs" />
     <Compile Include="Pokemons\Estadisticas.cs" />
+    <Compile Include="Pokemons\Tipos\Fuego.cs" />
     <Compile Include="Pokemons\Pokemon.cs" />
+    <Compile Include="Pokemons\Tipos\Hierva.cs" />
+    <Compile Include="Pokemons\Tipos\Roca.cs" />
+    <Compile Include="Pokemons\Tipos\Tierra.cs" />
     <Compile Include="Pokemons\Tipos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
