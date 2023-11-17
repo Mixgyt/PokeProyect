@@ -15,5 +15,10 @@ namespace Pokemons.Ataques
             Daño = 10;
             Tipo = Tipos.Fuego;
         }
+
+        public override void Efecto(Pokemon poke1, Pokemon poke2)
+        {
+            Console.WriteLine("Ascuas");
+        }
     }
 }

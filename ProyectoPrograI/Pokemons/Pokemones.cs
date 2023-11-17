@@ -7,7 +7,7 @@ using Pokemons.Ataques;
 
 namespace Pokemons
 {
-    class Pokemons
+    class Pokemones
     {
         public Pokemon Pikachu = new Electrico()
         {
@@ -21,7 +21,10 @@ namespace Pokemons
             },
             Ataques = new List<Ataque> 
             { 
-                new Ascuas(),
+                new Impactrueno(),
+                new Electrobola(),
+                new Electrotela(),
+                new Altovoltaje()
 
             },
         };
