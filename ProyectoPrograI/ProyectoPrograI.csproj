@@ -46,14 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Pokemons\Ataques\Altovoltaje.cs" />
+    <Compile Include="Pokemons\Ataques\Electrotela.cs" />
+    <Compile Include="Pokemons\Ataques\Impactrueno.cs" />
+    <Compile Include="Pokemons\Ataques\Electrobola.cs" />
+    <Compile Include="Pokemons\Ataques\Ascuas.cs" />
+    <Compile Include="Pokemons\Pokemons.cs" />
+    <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Batalla.cs" />
     <Compile Include="Pokemons\Tipos\Agua.cs" />
-    <Compile Include="Pokemons\Ataques.cs" />
+    <Compile Include="Pokemons\Ataque.cs" />
     <Compile Include="Pokemons\Tipos\Electrico.cs" />
     <Compile Include="Pokemons\Estadisticas.cs" />
     <Compile Include="Pokemons\Tipos\Fuego.cs" />
@@ -64,8 +71,8 @@
     <Compile Include="Pokemons\Tipos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

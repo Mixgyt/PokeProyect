@@ -11,7 +11,7 @@ namespace Pokemons
         public string Nombre { get; set; }
         public Tipos Tipo { get; set; }
         public Estadisticas Estadisticas { get; set; }
-        public List<Ataques> Ataques { get; set;}
+        public List<Ataque> Ataques { get; set;}
         public Tipos Debilidad { get; set; }
 
         public void atacar()

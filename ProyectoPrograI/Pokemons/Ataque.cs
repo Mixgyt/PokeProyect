@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Pokemons
 {
-    struct Ataques
+    abstract class Ataque
     {
+        public string Abreviatura = "Asc";
         public string Nombre { get; set; }
         public int Daño { get; set; }
-        public Tipos tipo { get; set; }
+        public Tipos Tipo { get; set; }
+
+        public abstract void Efecto(Pokemon poke1, Pokemon poke2);
     }
 }
