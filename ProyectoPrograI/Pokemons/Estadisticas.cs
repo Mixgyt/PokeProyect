@@ -15,7 +15,7 @@ namespace Pokemons
 
         public string GetEstadisticas()
         {
-            return $"\nVida: {vida}\nAtaque: {ataque}\nDefensas: {defensa}\n Velocidad: {velocidad}";
+            return $"\nVida: {vida}\nAtaque: {ataque}\nDefensas: {defensa}\nVelocidad: {velocidad}";
         }
     }
 }

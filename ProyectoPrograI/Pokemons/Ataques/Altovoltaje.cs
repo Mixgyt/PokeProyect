@@ -19,6 +19,7 @@ namespace Pokemons.Ataques
         public override void Efecto(Pokemon poke1, Pokemon poke2)
         {
             Console.WriteLine("Altovoltaje");
+            //
         }
     }
 }

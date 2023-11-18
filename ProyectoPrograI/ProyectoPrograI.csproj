@@ -59,11 +59,11 @@
     <Compile Include="Pokemons\Ataques\Electrobola.cs" />
     <Compile Include="Pokemons\Ataques\Ascuas.cs" />
     <Compile Include="Pokemons\Pokemones.cs" />
-    <Compile Include="Test.cs">
+    <Compile Include="Pokedex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
+    <Compile Include="Pokedex.Designer.cs">
+      <DependentUpon>Pokedex.cs</DependentUpon>
     </Compile>
     <Compile Include="Batalla.cs" />
     <Compile Include="Pokemons\Tipos\Agua.cs" />
@@ -78,8 +78,8 @@
     <Compile Include="Pokemons\Tipos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Test.resx">
-      <DependentUpon>Test.cs</DependentUpon>
+    <EmbeddedResource Include="Pokedex.resx">
+      <DependentUpon>Pokedex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -103,6 +104,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\Pokemons\Blastoise.png" />
+    <Content Include="Recursos\Pokemons\Bulbasaur.png" />
+    <Content Include="Recursos\Pokemons\Charizard.png" />
+    <Content Include="Recursos\Pokemons\Diglett.png" />
+    <Content Include="Recursos\Pokemons\Geodude.png" />
+    <Content Include="Recursos\Pokemons\Pikachu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
