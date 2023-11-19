@@ -1,0 +1,22 @@
+C:\Users\MINEDUCYT\source\repos\interfaz\bin\Debug\interfaz.exe.config
+C:\Users\MINEDUCYT\source\repos\interfaz\bin\Debug\interfaz.exe
+C:\Users\MINEDUCYT\source\repos\interfaz\bin\Debug\interfaz.pdb
+C:\Users\MINEDUCYT\source\repos\interfaz\obj\Debug\interfaz.csproj.AssemblyReference.cache
+C:\Users\MINEDUCYT\source\repos\interfaz\obj\Debug\interfaz.Form1.resources
+C:\Users\MINEDUCYT\source\repos\interfaz\obj\Debug\interfaz.Properties.Resources.resources
+C:\Users\MINEDUCYT\source\repos\interfaz\obj\Debug\interfaz.csproj.GenerateResource.cache
+C:\Users\MINEDUCYT\source\repos\interfaz\obj\Debug\interfaz.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\source\repos\interfaz\obj\Debug\interfaz.exe
+C:\Users\MINEDUCYT\source\repos\interfaz\obj\Debug\interfaz.pdb
+C:\Users\MINEDUCYT\source\repos\interfaz\obj\Debug\interfaz.Form2.resources
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\bin\Debug\interfaz.exe.config
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\bin\Debug\interfaz.exe
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\bin\Debug\interfaz.pdb
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\obj\Debug\interfaz.csproj.AssemblyReference.cache
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\obj\Debug\interfaz.Form1.resources
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\obj\Debug\interfaz.Form2.resources
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\obj\Debug\interfaz.Properties.Resources.resources
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\obj\Debug\interfaz.csproj.GenerateResource.cache
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\obj\Debug\interfaz.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\obj\Debug\interfaz.exe
+C:\Users\MINEDUCYT\Pictures\proyecto pokemon\PokeProyect\interfaces\obj\Debug\interfaz.pdb
