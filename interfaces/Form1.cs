@@ -19,7 +19,7 @@ namespace interfaz
         {
             InitializeComponent();
             reproducirSonidoIni = new SoundPlayer(Properties.Resources.sonido_Principal);
-            reproducirSonidoIni.Play();
+            this.reproducirSonidoIni.Play();
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -27,7 +27,7 @@ namespace interfaz
             Form BotonInicio = new Form2();
             BotonInicio.Show();
             this.Hide();
-            reproducirSonidoIni.Stop();
+           
            
         }
         
