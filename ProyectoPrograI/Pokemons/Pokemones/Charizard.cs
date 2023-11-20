@@ -16,7 +16,7 @@ namespace Pokemons.Pokemones
             Stats = new Estadisticas()
             {
                 vida = 78,
-                ataque = 84,
+                ataque = 60,
                 defensa = 78,
                 velocidad = 100
             };

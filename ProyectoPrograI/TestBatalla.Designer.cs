@@ -36,8 +36,10 @@
             this.DialogoBatalla = new System.Windows.Forms.Panel();
             this.DialogoLbl = new System.Windows.Forms.Label();
             this.PanelAtkPoke1 = new System.Windows.Forms.Panel();
+            this.Poke1LblSignal = new System.Windows.Forms.Label();
             this.Poke2Lbl = new System.Windows.Forms.Label();
             this.PanelAtkPoke2 = new System.Windows.Forms.Panel();
+            this.Poke2LblSignal = new System.Windows.Forms.Label();
             this.Poke2AtkBt3 = new System.Windows.Forms.Button();
             this.Poke2AtkBt4 = new System.Windows.Forms.Button();
             this.Poke2AtkBt2 = new System.Windows.Forms.Button();
@@ -46,8 +48,6 @@
             this.LifePoke1 = new System.Windows.Forms.ProgressBar();
             this.LifePoke2Lbl = new System.Windows.Forms.Label();
             this.LifePoke1Lbl = new System.Windows.Forms.Label();
-            this.Poke2LblSignal = new System.Windows.Forms.Label();
-            this.Poke1LblSignal = new System.Windows.Forms.Label();
             this.Poke2Img = new System.Windows.Forms.PictureBox();
             this.Poke1Img = new System.Windows.Forms.PictureBox();
             this.DialogoBatalla.SuspendLayout();
@@ -139,6 +139,16 @@
             this.PanelAtkPoke1.TabIndex = 4;
             this.PanelAtkPoke1.Visible = false;
             // 
+            // Poke1LblSignal
+            // 
+            this.Poke1LblSignal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Poke1LblSignal.Location = new System.Drawing.Point(3, 1);
+            this.Poke1LblSignal.Name = "Poke1LblSignal";
+            this.Poke1LblSignal.Size = new System.Drawing.Size(15, 142);
+            this.Poke1LblSignal.TabIndex = 2;
+            this.Poke1LblSignal.Text = "Pokemon1";
+            this.Poke1LblSignal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Poke2Lbl
             // 
             this.Poke2Lbl.AutoSize = true;
@@ -157,11 +167,21 @@
             this.PanelAtkPoke2.Controls.Add(this.Poke2AtkBt4);
             this.PanelAtkPoke2.Controls.Add(this.Poke2AtkBt2);
             this.PanelAtkPoke2.Controls.Add(this.Poke2AtkBt1);
-            this.PanelAtkPoke2.Location = new System.Drawing.Point(72, 366);
+            this.PanelAtkPoke2.Location = new System.Drawing.Point(72, 361);
             this.PanelAtkPoke2.Name = "PanelAtkPoke2";
             this.PanelAtkPoke2.Size = new System.Drawing.Size(642, 145);
             this.PanelAtkPoke2.TabIndex = 4;
             this.PanelAtkPoke2.Visible = false;
+            // 
+            // Poke2LblSignal
+            // 
+            this.Poke2LblSignal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Poke2LblSignal.Location = new System.Drawing.Point(3, 3);
+            this.Poke2LblSignal.Name = "Poke2LblSignal";
+            this.Poke2LblSignal.Size = new System.Drawing.Size(15, 155);
+            this.Poke2LblSignal.TabIndex = 1;
+            this.Poke2LblSignal.Text = "Pokemon2";
+            this.Poke2LblSignal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Poke2AtkBt3
             // 
@@ -242,26 +262,6 @@
             this.LifePoke1Lbl.Size = new System.Drawing.Size(31, 18);
             this.LifePoke1Lbl.TabIndex = 6;
             this.LifePoke1Lbl.Text = "0/0";
-            // 
-            // Poke2LblSignal
-            // 
-            this.Poke2LblSignal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Poke2LblSignal.Location = new System.Drawing.Point(3, 3);
-            this.Poke2LblSignal.Name = "Poke2LblSignal";
-            this.Poke2LblSignal.Size = new System.Drawing.Size(15, 155);
-            this.Poke2LblSignal.TabIndex = 1;
-            this.Poke2LblSignal.Text = "Pokemon2";
-            this.Poke2LblSignal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Poke1LblSignal
-            // 
-            this.Poke1LblSignal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Poke1LblSignal.Location = new System.Drawing.Point(3, 1);
-            this.Poke1LblSignal.Name = "Poke1LblSignal";
-            this.Poke1LblSignal.Size = new System.Drawing.Size(15, 142);
-            this.Poke1LblSignal.TabIndex = 2;
-            this.Poke1LblSignal.Text = "Pokemon1";
-            this.Poke1LblSignal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Poke2Img
             // 

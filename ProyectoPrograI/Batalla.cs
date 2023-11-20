@@ -15,7 +15,7 @@ namespace ProyectoPrograI
             //Poke1 es el que hace el ataque
             //Poke2 es quien recibe el ataque
             Random rand = new Random();
-            string mensaje = "";
+            string mensaje;
             int criticoProb = rand.Next(0, 11);
             if (poke2.Debilidad.Contains(atk.Tipo))
             {

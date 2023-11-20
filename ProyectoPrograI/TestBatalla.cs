@@ -32,7 +32,7 @@ namespace ProyectoPrograI
         private void TestBatalla_Load(object sender, EventArgs e)
         {
             
-            Poke1Img.Image.RotateFlip(RotateFlipType.Rotate180FlipY);
+            //Poke1Img.Image.RotateFlip(RotateFlipType.Rotate180FlipY);
             LifePoke1.Maximum = pokemon1.Stats.vida;
 
             

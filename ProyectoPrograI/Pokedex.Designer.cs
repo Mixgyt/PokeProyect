@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.Estadisticas = new System.Windows.Forms.Label();
-            this.Imagen = new System.Windows.Forms.PictureBox();
             this.NombreLbl = new System.Windows.Forms.Label();
             this.EstadisticasLbl = new System.Windows.Forms.Label();
-            this.RigthBt = new FontAwesome.Sharp.IconButton();
-            this.LeftBt = new FontAwesome.Sharp.IconButton();
             this.TipoLbl = new System.Windows.Forms.Label();
+            this.LeftBt = new FontAwesome.Sharp.IconButton();
+            this.RigthBt = new FontAwesome.Sharp.IconButton();
+            this.Imagen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,15 +47,6 @@
             this.Estadisticas.TabIndex = 0;
             this.Estadisticas.Text = "label";
             this.Estadisticas.Click += new System.EventHandler(this.text_Click);
-            // 
-            // Imagen
-            // 
-            this.Imagen.Location = new System.Drawing.Point(78, 48);
-            this.Imagen.Name = "Imagen";
-            this.Imagen.Size = new System.Drawing.Size(204, 148);
-            this.Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Imagen.TabIndex = 1;
-            this.Imagen.TabStop = false;
             // 
             // NombreLbl
             // 
@@ -75,17 +66,14 @@
             this.EstadisticasLbl.TabIndex = 2;
             this.EstadisticasLbl.Text = "Estadisticas";
             // 
-            // RigthBt
+            // TipoLbl
             // 
-            this.RigthBt.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleRight;
-            this.RigthBt.IconColor = System.Drawing.Color.Black;
-            this.RigthBt.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.RigthBt.Location = new System.Drawing.Point(298, 375);
-            this.RigthBt.Name = "RigthBt";
-            this.RigthBt.Size = new System.Drawing.Size(73, 51);
-            this.RigthBt.TabIndex = 3;
-            this.RigthBt.UseVisualStyleBackColor = true;
-            this.RigthBt.Click += new System.EventHandler(this.RigthBt_Click);
+            this.TipoLbl.AutoSize = true;
+            this.TipoLbl.Location = new System.Drawing.Point(131, 348);
+            this.TipoLbl.Name = "TipoLbl";
+            this.TipoLbl.Size = new System.Drawing.Size(31, 13);
+            this.TipoLbl.TabIndex = 4;
+            this.TipoLbl.Text = "Tipo:";
             // 
             // LeftBt
             // 
@@ -99,14 +87,26 @@
             this.LeftBt.UseVisualStyleBackColor = true;
             this.LeftBt.Click += new System.EventHandler(this.LeftBt_Click);
             // 
-            // TipoLbl
+            // RigthBt
             // 
-            this.TipoLbl.AutoSize = true;
-            this.TipoLbl.Location = new System.Drawing.Point(131, 348);
-            this.TipoLbl.Name = "TipoLbl";
-            this.TipoLbl.Size = new System.Drawing.Size(31, 13);
-            this.TipoLbl.TabIndex = 4;
-            this.TipoLbl.Text = "Tipo:";
+            this.RigthBt.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleRight;
+            this.RigthBt.IconColor = System.Drawing.Color.Black;
+            this.RigthBt.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.RigthBt.Location = new System.Drawing.Point(298, 375);
+            this.RigthBt.Name = "RigthBt";
+            this.RigthBt.Size = new System.Drawing.Size(73, 51);
+            this.RigthBt.TabIndex = 3;
+            this.RigthBt.UseVisualStyleBackColor = true;
+            this.RigthBt.Click += new System.EventHandler(this.RigthBt_Click);
+            // 
+            // Imagen
+            // 
+            this.Imagen.Location = new System.Drawing.Point(78, 48);
+            this.Imagen.Name = "Imagen";
+            this.Imagen.Size = new System.Drawing.Size(204, 148);
+            this.Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen.TabIndex = 1;
+            this.Imagen.TabStop = false;
             // 
             // Pokedex
             // 

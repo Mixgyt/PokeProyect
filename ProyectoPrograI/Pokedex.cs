@@ -18,7 +18,6 @@ namespace ProyectoPrograI
     {
         List<Pokemon> pokemons = new List<Pokemon>();
         int indexPoke = 0;
-        SoundPlayer reproductor;
         public Pokedex()
         {
             InitializeComponent();
