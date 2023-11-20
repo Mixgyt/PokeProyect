@@ -16,7 +16,7 @@ namespace ProyectoPrograI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Pokedex());
+            Application.Run(new TestBatalla());
         }
     }
 }

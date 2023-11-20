@@ -11,6 +11,7 @@ namespace Pokemons
         public Hierva() 
         {
             Tipo = Tipos.Hierva;
+            Debilidad = new List<Tipos> { Tipos.Fuego };
         }
     }
 }

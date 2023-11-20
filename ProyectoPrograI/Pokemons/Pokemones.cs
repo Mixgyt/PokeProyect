@@ -8,12 +8,12 @@ using ProyectoPrograI.Properties;
 
 namespace Pokemons
 {
-    class Pokemones
+    class Pokes
     {
         public Pokemon Pikachu = new Electrico()
         {
             Nombre = "Pikachu",
-            Estadisticas = new Estadisticas()
+            Stats = new Estadisticas()
             {
                 vida = 35,
                 ataque = 55,
@@ -34,16 +34,16 @@ namespace Pokemons
         public Pokemon Charizard = new Fuego()
         {
             Nombre = "Charizard",
-            Estadisticas = new Estadisticas()
+            Stats = new Estadisticas()
             {
-                vida = 0,
-                ataque = 0,
-                defensa = 0,
-                velocidad = 0
+                vida = 78,
+                ataque = 84,
+                defensa = 78,
+                velocidad = 100
             },
             Ataques = new List<Ataque>
             {
-
+                new Ascuas()
             },
             Imagen = Resources.Charizard
         };
@@ -51,16 +51,19 @@ namespace Pokemons
         public Pokemon Bulbasaur = new Hierva()
         {
             Nombre = "Bulbasaur",
-            Estadisticas = new Estadisticas()
+            Stats = new Estadisticas()
             {
-                vida = 0,
-                ataque = 0,
-                defensa = 0,
-                velocidad = 0
+                vida = 45,
+                ataque = 49,
+                defensa = 49,
+                velocidad = 45
             },
             Ataques = new List<Ataque>
             {
-
+                new Placaje(),
+                new Derribo(),
+                new Hoja_Afilada(),
+                new Latigo_Cepa()
             },
             Imagen = Resources.Bulbasaur
         };
@@ -68,12 +71,12 @@ namespace Pokemons
         public Pokemon Diglett = new Tierra()
         {
             Nombre = "Diglett",
-            Estadisticas = new Estadisticas()
+            Stats = new Estadisticas()
             {
-                vida = 0,
-                ataque = 0,
-                defensa = 0,
-                velocidad = 0
+                vida = 10,
+                ataque = 55,
+                defensa = 25,
+                velocidad = 95
             },
             Ataques = new List<Ataque>
             {
@@ -85,12 +88,12 @@ namespace Pokemons
         public Pokemon Blastoise = new Agua()
         {
             Nombre = "Blastoise",
-            Estadisticas = new Estadisticas()
+            Stats = new Estadisticas()
             {
-                vida = 0,
-                ataque = 0,
-                defensa = 0,
-                velocidad = 0
+                vida = 79,
+                ataque = 83,
+                defensa = 100,
+                velocidad = 78
             },
             Ataques = new List<Ataque>
             {
@@ -102,12 +105,12 @@ namespace Pokemons
         public Pokemon Geodude = new Roca()
         {
             Nombre = "Geodude",
-            Estadisticas = new Estadisticas()
+            Stats = new Estadisticas()
             {
-                vida = 0,
-                ataque = 0,
-                defensa = 0,
-                velocidad = 0
+                vida = 40,
+                ataque = 80,
+                defensa = 100,
+                velocidad = 20
             },
             Ataques = new List<Ataque>
             {

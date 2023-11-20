@@ -12,6 +12,7 @@ namespace Pokemons
         public Tierra() 
         {
             Tipo = Tipos.Tierra;
+            Debilidad = new List<Tipos> { Tipos.Hierva, Tipos.Agua };
         }
     }
 }

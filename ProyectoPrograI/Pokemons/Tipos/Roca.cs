@@ -11,6 +11,7 @@ namespace Pokemons
         public Roca() 
         {
             Tipo = Tipos.Roca;
+            Debilidad = new List<Tipos> { Tipos.Agua, Tipos.Hierva, Tipos.Tierra };
         }
     }
 }

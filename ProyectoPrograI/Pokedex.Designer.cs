@@ -34,6 +34,7 @@
             this.EstadisticasLbl = new System.Windows.Forms.Label();
             this.RigthBt = new FontAwesome.Sharp.IconButton();
             this.LeftBt = new FontAwesome.Sharp.IconButton();
+            this.TipoLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,11 +99,21 @@
             this.LeftBt.UseVisualStyleBackColor = true;
             this.LeftBt.Click += new System.EventHandler(this.LeftBt_Click);
             // 
+            // TipoLbl
+            // 
+            this.TipoLbl.AutoSize = true;
+            this.TipoLbl.Location = new System.Drawing.Point(131, 348);
+            this.TipoLbl.Name = "TipoLbl";
+            this.TipoLbl.Size = new System.Drawing.Size(31, 13);
+            this.TipoLbl.TabIndex = 4;
+            this.TipoLbl.Text = "Tipo:";
+            // 
             // Pokedex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 450);
+            this.Controls.Add(this.TipoLbl);
             this.Controls.Add(this.LeftBt);
             this.Controls.Add(this.RigthBt);
             this.Controls.Add(this.EstadisticasLbl);
@@ -126,6 +137,7 @@
         private System.Windows.Forms.Label EstadisticasLbl;
         private FontAwesome.Sharp.IconButton RigthBt;
         private FontAwesome.Sharp.IconButton LeftBt;
+        private System.Windows.Forms.Label TipoLbl;
     }
 }
 

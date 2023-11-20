@@ -11,6 +11,7 @@ namespace Pokemons
         public Electrico() 
         {
             Tipo = Tipos.Electrico;
+            Debilidad = new List<Tipos>() { Tipos.Tierra };
         }
     }
 }

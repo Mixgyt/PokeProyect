@@ -113,6 +113,16 @@ namespace ProyectoPrograI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Missingno {
+            get {
+                object obj = ResourceManager.GetObject("Missingno", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pikachu {
             get {
                 object obj = ResourceManager.GetObject("Pikachu", resourceCulture);

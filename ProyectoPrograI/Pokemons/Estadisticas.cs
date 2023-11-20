@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pokemons
 {
-    struct Estadisticas
+    class Estadisticas
     {
         public int vida {  get; set; }
         public int ataque { get; set; }

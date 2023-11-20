@@ -11,6 +11,7 @@ namespace Pokemons
         public Fuego() 
         {
             Tipo = Tipos.Fuego;
+            Debilidad = new List<Tipos> { Tipos.Agua, Tipos.Tierra, Tipos.Roca };
         }
     }
 }
