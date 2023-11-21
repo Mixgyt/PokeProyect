@@ -46,9 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomBar.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\poke-bola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proyecto nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokeball.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

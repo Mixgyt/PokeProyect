@@ -24,9 +24,13 @@ namespace interfaz
             this.reproducirSonidocomba.PlayLooping();
 
             // aqui se le estamos agregando una imagen al boton de cambiar pokemon
-            Bitmap image = new Bitmap(Properties.Resources.poke_bola_2_);
-            BotonCambiar.BackgroundImage = image;
-            BotonCambiar.BackgroundImageLayout = ImageLayout.Zoom;
+            Bitmap image = new Bitmap(Properties.Resources.pokeball);
+            CambiarPoke2Bt.BackgroundImage = image;
+            CambiarPoke2Bt.BackgroundImageLayout = ImageLayout.Zoom;
+
+            Bitmap img = new Bitmap(Properties.Resources.pokeball);
+            CambiarPoke1Bt.BackgroundImage = img;
+            CambiarPoke1Bt.BackgroundImageLayout = ImageLayout.Zoom;
         }
       
          // Esta funcion ayuda que detenga la musica hay cerrar la aplicacion
@@ -42,6 +46,27 @@ namespace interfaz
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Poke1AtkBt4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+            
+        }
+
+        private void BotonCambiar_Click(object sender, EventArgs e)
         {
 
         }

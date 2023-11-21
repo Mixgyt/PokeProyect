@@ -29,56 +29,56 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.FondoboxInicial = new System.Windows.Forms.PictureBox();
+            this.ButtonIniciar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.FondoboxInicial)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // FondoboxInicial
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Yellow;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(728, 460);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.FondoboxInicial.BackColor = System.Drawing.Color.Yellow;
+            this.FondoboxInicial.Image = ((System.Drawing.Image)(resources.GetObject("FondoboxInicial.Image")));
+            this.FondoboxInicial.Location = new System.Drawing.Point(-1, -1);
+            this.FondoboxInicial.Name = "FondoboxInicial";
+            this.FondoboxInicial.Size = new System.Drawing.Size(728, 460);
+            this.FondoboxInicial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FondoboxInicial.TabIndex = 0;
+            this.FondoboxInicial.TabStop = false;
             // 
-            // button1
+            // ButtonIniciar
             // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(31, 409);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 29);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Iniciar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ButtonIniciar.BackColor = System.Drawing.Color.Blue;
+            this.ButtonIniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
+            this.ButtonIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonIniciar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ButtonIniciar.Location = new System.Drawing.Point(31, 409);
+            this.ButtonIniciar.Name = "ButtonIniciar";
+            this.ButtonIniciar.Size = new System.Drawing.Size(89, 29);
+            this.ButtonIniciar.TabIndex = 1;
+            this.ButtonIniciar.Text = "Iniciar";
+            this.ButtonIniciar.UseVisualStyleBackColor = false;
+            this.ButtonIniciar.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 459);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ButtonIniciar);
+            this.Controls.Add(this.FondoboxInicial);
             this.Name = "Form1";
             this.Text = "pokemon";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FondoboxInicial)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox FondoboxInicial;
+        private System.Windows.Forms.Button ButtonIniciar;
     }
 }
 
