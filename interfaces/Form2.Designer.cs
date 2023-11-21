@@ -29,38 +29,47 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Fondobox = new System.Windows.Forms.PictureBox();
+            this.Poke2AtkBt3 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.Poke2AtkBt1 = new System.Windows.Forms.Button();
+            this.Poke2AtkBt4 = new System.Windows.Forms.Button();
+            this.Poke2AtkBt2 = new System.Windows.Forms.Button();
+            this.PanelAtkPoke2 = new System.Windows.Forms.Panel();
+            this.PanelAtkPoke1 = new System.Windows.Forms.Panel();
+            this.Poke1AtkBt1 = new System.Windows.Forms.Button();
+            this.Poke1AtkBt2 = new System.Windows.Forms.Button();
+            this.Poke1AtkBt3 = new System.Windows.Forms.Button();
+            this.Poke1AtkBt4 = new System.Windows.Forms.Button();
+            this.BotonCambiar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rjProgressBar1 = new interfaz.RJProgressBar();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fondobox)).BeginInit();
+            this.PanelAtkPoke2.SuspendLayout();
+            this.PanelAtkPoke1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // Fondobox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(736, 457);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Fondobox.Image = ((System.Drawing.Image)(resources.GetObject("Fondobox.Image")));
+            this.Fondobox.Location = new System.Drawing.Point(0, 2);
+            this.Fondobox.Name = "Fondobox";
+            this.Fondobox.Size = new System.Drawing.Size(736, 457);
+            this.Fondobox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Fondobox.TabIndex = 0;
+            this.Fondobox.TabStop = false;
             // 
-            // button3
+            // Poke2AtkBt3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.button3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button3.Location = new System.Drawing.Point(23, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 44);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Poke2AtkBt3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Poke2AtkBt3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Poke2AtkBt3.Location = new System.Drawing.Point(113, 56);
+            this.Poke2AtkBt3.Name = "Poke2AtkBt3";
+            this.Poke2AtkBt3.Size = new System.Drawing.Size(96, 44);
+            this.Poke2AtkBt3.TabIndex = 3;
+            this.Poke2AtkBt3.Text = "button3";
+            this.Poke2AtkBt3.UseVisualStyleBackColor = false;
             // 
             // richTextBox1
             // 
@@ -72,81 +81,162 @@
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
-            // button5
+            // Poke2AtkBt1
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.button5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button5.Location = new System.Drawing.Point(145, 56);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 44);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = false;
+            this.Poke2AtkBt1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Poke2AtkBt1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Poke2AtkBt1.Location = new System.Drawing.Point(110, 3);
+            this.Poke2AtkBt1.Name = "Poke2AtkBt1";
+            this.Poke2AtkBt1.Size = new System.Drawing.Size(96, 44);
+            this.Poke2AtkBt1.TabIndex = 6;
+            this.Poke2AtkBt1.Text = "button5";
+            this.Poke2AtkBt1.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // Poke2AtkBt4
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.button6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button6.Location = new System.Drawing.Point(23, 53);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(94, 44);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Poke2AtkBt4.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Poke2AtkBt4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Poke2AtkBt4.Location = new System.Drawing.Point(5, 3);
+            this.Poke2AtkBt4.Name = "Poke2AtkBt4";
+            this.Poke2AtkBt4.Size = new System.Drawing.Size(94, 44);
+            this.Poke2AtkBt4.TabIndex = 7;
+            this.Poke2AtkBt4.Text = "button6";
+            this.Poke2AtkBt4.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // Poke2AtkBt2
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.button7.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button7.Location = new System.Drawing.Point(145, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(96, 44);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = false;
+            this.Poke2AtkBt2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Poke2AtkBt2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Poke2AtkBt2.Location = new System.Drawing.Point(3, 53);
+            this.Poke2AtkBt2.Name = "Poke2AtkBt2";
+            this.Poke2AtkBt2.Size = new System.Drawing.Size(96, 44);
+            this.Poke2AtkBt2.TabIndex = 8;
+            this.Poke2AtkBt2.Text = "button7";
+            this.Poke2AtkBt2.UseVisualStyleBackColor = false;
+            // 
+            // PanelAtkPoke2
+            // 
+            this.PanelAtkPoke2.BackColor = System.Drawing.Color.Gray;
+            this.PanelAtkPoke2.Controls.Add(this.Poke2AtkBt1);
+            this.PanelAtkPoke2.Controls.Add(this.Poke2AtkBt2);
+            this.PanelAtkPoke2.Controls.Add(this.Poke2AtkBt3);
+            this.PanelAtkPoke2.Controls.Add(this.Poke2AtkBt4);
+            this.PanelAtkPoke2.Location = new System.Drawing.Point(427, 338);
+            this.PanelAtkPoke2.Name = "PanelAtkPoke2";
+            this.PanelAtkPoke2.Size = new System.Drawing.Size(209, 100);
+            this.PanelAtkPoke2.TabIndex = 9;
+            this.PanelAtkPoke2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // PanelAtkPoke1
+            // 
+            this.PanelAtkPoke1.BackColor = System.Drawing.Color.Gray;
+            this.PanelAtkPoke1.Controls.Add(this.Poke1AtkBt1);
+            this.PanelAtkPoke1.Controls.Add(this.Poke1AtkBt2);
+            this.PanelAtkPoke1.Controls.Add(this.Poke1AtkBt3);
+            this.PanelAtkPoke1.Controls.Add(this.Poke1AtkBt4);
+            this.PanelAtkPoke1.Location = new System.Drawing.Point(201, 335);
+            this.PanelAtkPoke1.Name = "PanelAtkPoke1";
+            this.PanelAtkPoke1.Size = new System.Drawing.Size(209, 100);
+            this.PanelAtkPoke1.TabIndex = 10;
+            // 
+            // Poke1AtkBt1
+            // 
+            this.Poke1AtkBt1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Poke1AtkBt1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Poke1AtkBt1.Location = new System.Drawing.Point(110, 3);
+            this.Poke1AtkBt1.Name = "Poke1AtkBt1";
+            this.Poke1AtkBt1.Size = new System.Drawing.Size(96, 44);
+            this.Poke1AtkBt1.TabIndex = 6;
+            this.Poke1AtkBt1.Text = "button1";
+            this.Poke1AtkBt1.UseVisualStyleBackColor = false;
+            // 
+            // Poke1AtkBt2
+            // 
+            this.Poke1AtkBt2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Poke1AtkBt2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Poke1AtkBt2.Location = new System.Drawing.Point(3, 53);
+            this.Poke1AtkBt2.Name = "Poke1AtkBt2";
+            this.Poke1AtkBt2.Size = new System.Drawing.Size(96, 44);
+            this.Poke1AtkBt2.TabIndex = 8;
+            this.Poke1AtkBt2.Text = "button2";
+            this.Poke1AtkBt2.UseVisualStyleBackColor = false;
+            // 
+            // Poke1AtkBt3
+            // 
+            this.Poke1AtkBt3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Poke1AtkBt3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Poke1AtkBt3.Location = new System.Drawing.Point(110, 53);
+            this.Poke1AtkBt3.Name = "Poke1AtkBt3";
+            this.Poke1AtkBt3.Size = new System.Drawing.Size(96, 44);
+            this.Poke1AtkBt3.TabIndex = 3;
+            this.Poke1AtkBt3.Text = "button4";
+            this.Poke1AtkBt3.UseVisualStyleBackColor = false;
+            // 
+            // Poke1AtkBt4
+            // 
+            this.Poke1AtkBt4.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Poke1AtkBt4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Poke1AtkBt4.Location = new System.Drawing.Point(0, 3);
+            this.Poke1AtkBt4.Name = "Poke1AtkBt4";
+            this.Poke1AtkBt4.Size = new System.Drawing.Size(94, 44);
+            this.Poke1AtkBt4.TabIndex = 7;
+            this.Poke1AtkBt4.Text = "button8";
+            this.Poke1AtkBt4.UseVisualStyleBackColor = false;
+            // 
+            // BotonCambiar
+            // 
+            this.BotonCambiar.BackColor = System.Drawing.Color.Gray;
+            this.BotonCambiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BotonCambiar.FlatAppearance.BorderSize = 0;
+            this.BotonCambiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BotonCambiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonCambiar.ForeColor = System.Drawing.Color.Transparent;
+            this.BotonCambiar.Location = new System.Drawing.Point(0, 0);
+            this.BotonCambiar.Name = "BotonCambiar";
+            this.BotonCambiar.Size = new System.Drawing.Size(69, 66);
+            this.BotonCambiar.TabIndex = 11;
+            this.BotonCambiar.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(645, 272);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(63, 65);
+            this.button1.TabIndex = 12;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Location = new System.Drawing.Point(472, 338);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.BotonCambiar);
+            this.panel1.Location = new System.Drawing.Point(639, 166);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 100);
+            this.panel1.Size = new System.Drawing.Size(69, 88);
             this.panel1.TabIndex = 9;
-            // 
-            // rjProgressBar1
-            // 
-            this.rjProgressBar1.ChannelColor = System.Drawing.Color.LightSteelBlue;
-            this.rjProgressBar1.ChannelHeight = 6;
-            this.rjProgressBar1.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.rjProgressBar1.ForeColor = System.Drawing.Color.White;
-            this.rjProgressBar1.Location = new System.Drawing.Point(140, 207);
-            this.rjProgressBar1.Name = "rjProgressBar1";
-            this.rjProgressBar1.ShowMaximun = false;
-            this.rjProgressBar1.ShowValue = interfaz.TextPosition.Right;
-            this.rjProgressBar1.Size = new System.Drawing.Size(354, 23);
-            this.rjProgressBar1.SliderColor = System.Drawing.Color.RoyalBlue;
-            this.rjProgressBar1.SliderHeight = 6;
-            this.rjProgressBar1.SymbolAfter = "";
-            this.rjProgressBar1.SymbolBefore = "";
-            this.rjProgressBar1.TabIndex = 10;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 450);
-            this.Controls.Add(this.rjProgressBar1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PanelAtkPoke1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PanelAtkPoke2);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Fondobox);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fondobox)).EndInit();
+            this.PanelAtkPoke2.ResumeLayout(false);
+            this.PanelAtkPoke1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -154,13 +244,20 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox Fondobox;
+        private System.Windows.Forms.Button Poke2AtkBt3;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button Poke2AtkBt1;
+        private System.Windows.Forms.Button Poke2AtkBt4;
+        private System.Windows.Forms.Button Poke2AtkBt2;
+        private System.Windows.Forms.Panel PanelAtkPoke2;
+        private System.Windows.Forms.Panel PanelAtkPoke1;
+        private System.Windows.Forms.Button Poke1AtkBt1;
+        private System.Windows.Forms.Button Poke1AtkBt2;
+        private System.Windows.Forms.Button Poke1AtkBt3;
+        private System.Windows.Forms.Button Poke1AtkBt4;
+        private System.Windows.Forms.Button BotonCambiar;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
-        private RJProgressBar rjProgressBar1;
     }
 }

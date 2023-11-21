@@ -13,14 +13,23 @@ namespace interfaz
 {
     public partial class Form2 : Form
     {
+        //se Ultiza la clase SoundPlayer para la reproduccion de sonidos
         SoundPlayer reproducirSonidocomba = new SoundPlayer();
         public Form2()
         {
             InitializeComponent();
-            reproducirSonidocomba = new SoundPlayer(Properties.Resources.sonido_combate);
-            this.reproducirSonidocomba.Play();
-        }
 
+            // codigo utlizado para la reproduccion de sonido
+            reproducirSonidocomba = new SoundPlayer(Properties.Resources.sonido_combate);
+            this.reproducirSonidocomba.PlayLooping();
+
+            // aqui se le estamos agregando una imagen al boton de cambiar pokemon
+            Bitmap image = new Bitmap(Properties.Resources.poke_bola_2_);
+            BotonCambiar.BackgroundImage = image;
+            BotonCambiar.BackgroundImageLayout = ImageLayout.Zoom;
+        }
+      
+         // Esta funcion ayuda que detenga la musica hay cerrar la aplicacion
         protected override void OnFormClosed(FormClosedEventArgs e)
         {
             reproducirSonidocomba.Stop();
@@ -32,6 +41,9 @@ namespace interfaz
            
         }
 
-        
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

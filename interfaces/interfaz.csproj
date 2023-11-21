@@ -99,7 +99,10 @@
     <None Include="Resources\sonido_Principal.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pikachu.png" />
+    <None Include="Resources\poke bola%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poke-bola.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,21 +14,31 @@ namespace interfaz
 {
     public partial class Form1 : Form
     {
+        //se Ultiza la clase SoundPlayer para la reproduccion de sonidos
         SoundPlayer reproducirSonidoIni =new SoundPlayer(); 
+
+        //Aplicamos la variable reproduciSonidoIni para iniciar la musica 
         public Form1()
         {
             InitializeComponent();
             reproducirSonidoIni = new SoundPlayer(Properties.Resources.sonido_Principal);
-            this.reproducirSonidoIni.Play();
+            reproducirSonidoIni.PlayLooping();
         }
+
+        //Buton iniciar se vincula con la siguinte formulario (elccion pokemmon)
         private void button1_Click(object sender, EventArgs e)
         {
-            
             Form BotonInicio = new Form2();
             BotonInicio.Show();
             this.Hide();
-           
-           
+            BotonInicio.FormClosed += cerrarVentana;
+
+        }
+
+        //se crea un metodo que cierra las ventanas que quedan abierta en segundo plano 
+        private void cerrarVentana(object sender, EventArgs e)
+        {
+            this.Close();
         }
         
         private void Form1_Load(object sender, EventArgs e)
@@ -36,8 +46,6 @@ namespace interfaz
         {
 
         }
-    
-
 
 
     }
