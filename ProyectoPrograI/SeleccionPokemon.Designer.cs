@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Poke2Bt = new System.Windows.Forms.Button();
             this.Poke1Bt = new System.Windows.Forms.Button();
             this.Poke3Bt = new System.Windows.Forms.Button();
             this.TitleLbl = new System.Windows.Forms.Label();
             this.CancelarBt = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // Poke2Bt
@@ -138,5 +140,6 @@
         private System.Windows.Forms.Button Poke3Bt;
         private System.Windows.Forms.Label TitleLbl;
         private System.Windows.Forms.Button CancelarBt;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

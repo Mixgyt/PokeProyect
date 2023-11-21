@@ -113,6 +113,16 @@ namespace ProyectoPrograI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Magnemite {
+            get {
+                object obj = ResourceManager.GetObject("Magnemite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Missingno {
             get {
                 object obj = ResourceManager.GetObject("Missingno", resourceCulture);

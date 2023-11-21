@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Entrenador.cs" />
     <Compile Include="Pokemons\Ataques\Agua\Chorro de Agua.cs" />
+    <Compile Include="Pokemons\Ataques\Electrico\Chispazo.cs" />
     <Compile Include="Pokemons\Ataques\Roca\Roca Afilada.cs" />
     <Compile Include="Pokemons\Ataques\Roca\Rompe Roca.cs" />
     <Compile Include="Pokemons\Ataques\Tierra\Bofeton Lodo.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="Pokemons\Pokemones\Charizard.cs" />
     <Compile Include="Pokemons\Pokemones\Diglett.cs" />
     <Compile Include="Pokemons\Pokemones\Geodude.cs" />
+    <Compile Include="Pokemons\Pokemones\Magnemite.cs" />
     <Compile Include="Pokemons\Pokemones\Pikachu.cs" />
     <Compile Include="Pokemons\Tipos\Agua.cs" />
     <Compile Include="Pokemons\Ataque.cs" />
@@ -172,6 +174,7 @@
     <Content Include="Recursos\Pokemons\Charizard.png" />
     <Content Include="Recursos\Pokemons\Diglett.png" />
     <Content Include="Recursos\Pokemons\Geodude.png" />
+    <Content Include="Recursos\Pokemons\Magnemite.png" />
     <Content Include="Recursos\Pokemons\Missingno.png" />
     <Content Include="Recursos\Pokemons\Pikachu.png" />
   </ItemGroup>

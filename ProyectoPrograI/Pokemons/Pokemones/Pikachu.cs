@@ -15,6 +15,7 @@ namespace Pokemons.Pokemones
             Nombre = "Pikachu";
             Stats = new Estadisticas()
             {
+                ps = 35,
                 vida = 35,
                 ataque = 55,
                 defensa = 40,

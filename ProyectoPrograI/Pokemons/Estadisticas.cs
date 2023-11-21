@@ -8,6 +8,7 @@ namespace Pokemons
 {
     class Estadisticas
     {
+        public int ps { get; set; }
         public int vida {  get; set; }
         public int ataque { get; set; }
         public int defensa { get; set; }
@@ -15,7 +16,7 @@ namespace Pokemons
 
         public string GetEstadisticas()
         {
-            return $"\nVida: {vida}\nAtaque: {ataque}\nDefensas: {defensa}\nVelocidad: {velocidad}";
+            return $"Estadisticas: \nVida: {vida}\nAtaque: {ataque}\nDefensa: {defensa}\nVelocidad: {velocidad}";
         }
     }
 }

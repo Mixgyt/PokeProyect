@@ -15,6 +15,7 @@ namespace Pokemons.Pokemones
             Nombre = "Geodude";
             Stats = new Estadisticas()
             {
+                ps = 40,
                 vida = 40,
                 ataque = 80,
                 defensa = 100,

@@ -46,6 +46,10 @@ namespace ProyectoPrograI
                 Poke3Bt.ForeColor = Color.Black;
                 Poke3Bt.Enabled = true;
             }
+
+            toolTip1.SetToolTip(Poke3Bt, entrenador.CambiarPokemon(2).Stats.GetEstadisticas());
+            toolTip1.SetToolTip(Poke2Bt, entrenador.CambiarPokemon(1).Stats.GetEstadisticas());
+            toolTip1.SetToolTip(Poke1Bt, entrenador.CambiarPokemon(0).Stats.GetEstadisticas());
         }
 
         private void Poke1Bt_Click(object sender, EventArgs e)

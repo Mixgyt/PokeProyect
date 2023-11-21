@@ -19,32 +19,40 @@ namespace ProyectoPrograI
             int criticoProb = rand.Next(0, 11);
             if (poke2.Debilidad.Contains(atk.Tipo))
             {
-                int daño = poke2.Stats.defensa + poke2.Stats.vida - (atk.Daño + poke1.Stats.ataque);
-                daño = (int)Math.Round(daño - ((poke2.Stats.vida-daño) * 0.25));
-                mensaje = $"{poke1.Nombre} ataco a {poke2.Nombre} con {atk.Nombre} (SUPER EFECTIVO), causo {poke2.Stats.vida - daño} de daño";
+                double daño = (double)poke1.Stats.ataque / poke2.Stats.defensa * atk.Daño;
+                daño = daño + (daño*0.25);
+                mensaje = $"{poke1.Nombre} ataco a {poke2.Nombre} con {atk.Nombre} (SUPER EFECTIVO), causo {(int)daño} de daño";
                 if (criticoProb < 4)
                 {
-                    daño = (daño * 2) - poke2.Stats.vida;
-                    mensaje = $"{poke1.Nombre} ataco a {poke2.Nombre} con {atk.Nombre} (SUPER EFECTIVO) y (CRITICO), causo {poke2.Stats.vida - daño} de daño";
+                    daño = daño * 2;
+                    mensaje = $"{poke1.Nombre} ataco a {poke2.Nombre} con {atk.Nombre} (SUPER EFECTIVO) y (CRITICO), causo {(int)daño} de daño";
                 }
-                poke2.Stats.vida = daño;
+                poke2.Stats.vida = poke2.Stats.vida - (int)daño;
             }
             else
             {
-                int daño = poke2.Stats.defensa + poke2.Stats.vida - (atk.Daño + poke1.Stats.ataque);
-                mensaje = $"{poke1.Nombre} ataco a {poke2.Nombre} con {atk.Nombre}, causo {poke2.Stats.vida - daño} de daño";
-                if (criticoProb <= 4)
+                double daño = (double) poke1.Stats.ataque / poke2.Stats.defensa * atk.Daño;
+                mensaje = $"{poke1.Nombre} ataco a {poke2.Nombre} con {atk.Nombre}, causo {(int)daño} de daño";
+                if (criticoProb < 4)
                 {
-                    daño = (daño * 2) - poke2.Stats.vida;
-                    mensaje = $"{poke1.Nombre} ataco a {poke2.Nombre} con {atk.Nombre} (CRITICO), causo {poke2.Stats.vida - daño} de daño";
+                    daño = daño * 2;
+                    mensaje = $"{poke1.Nombre} ataco a {poke2.Nombre} con {atk.Nombre} (CRITICO), causo {(int)daño} de daño";
                 }
 
-                poke2.Stats.vida = daño;
+                poke2.Stats.vida = poke2.Stats.vida - (int)daño;
                  
             }
             //Console.WriteLine(criticoProb);
             return mensaje;
         }
+
+        /*public static string Ataque1(Pokemon poke1, Pokemon poke2, Ataque atk)
+        {
+            Random rand = new Random();
+            double daño = (double) poke1.Stats.ataque / poke2.Stats.defensa * atk.Daño;
+            Console.WriteLine($"La vida de {poke2.Nombre} seria: {poke2.Stats.vida - daño}, daño {daño}");
+            return $"El daño es: {(int)daño}";
+        }*/
         
 
         

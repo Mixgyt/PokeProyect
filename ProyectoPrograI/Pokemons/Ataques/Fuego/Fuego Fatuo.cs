@@ -12,7 +12,7 @@ namespace Pokemons.Ataques
         {
             Abreviatura = "Fuf";
             Nombre = "Fuego Fatuo";
-            Daño = 11;
+            Daño = 15;
             Tipo = Tipos.Fuego;
         }
 

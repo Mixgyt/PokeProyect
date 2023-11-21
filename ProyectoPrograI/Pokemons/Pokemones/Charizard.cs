@@ -15,8 +15,9 @@ namespace Pokemons.Pokemones
             Nombre = "Charizard";
             Stats = new Estadisticas()
             {
+                ps = 78,
                 vida = 78,
-                ataque = 60,
+                ataque = 55,
                 defensa = 78,
                 velocidad = 100
             };

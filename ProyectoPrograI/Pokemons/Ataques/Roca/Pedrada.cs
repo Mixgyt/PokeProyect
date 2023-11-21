@@ -12,7 +12,7 @@ namespace Pokemons.Ataques
         {
             Abreviatura = "Ped";
             Nombre = "Pedrada";
-            Daño = 18;
+            Daño = 15;
             Tipo = Tipos.Roca;
         }
 

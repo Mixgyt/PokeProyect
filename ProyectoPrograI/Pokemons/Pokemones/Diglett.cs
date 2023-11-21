@@ -15,9 +15,10 @@ namespace Pokemons.Pokemones
             Nombre = "Diglett";
             Stats = new Estadisticas()
             {
+                ps = 10,
                 vida = 10,
                 ataque = 55,
-                defensa = 25,
+                defensa = 30,
                 velocidad = 95
             };
             Ataques = new List<Ataque>

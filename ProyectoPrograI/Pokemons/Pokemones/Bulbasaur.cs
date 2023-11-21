@@ -15,6 +15,7 @@ namespace Pokemons.Pokemones
             Nombre = "Bulbasaur";
             Stats = new Estadisticas()
             {
+                ps = 45,
                 vida = 45,
                 ataque = 49,
                 defensa = 49,

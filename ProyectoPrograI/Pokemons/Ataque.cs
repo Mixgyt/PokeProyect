@@ -14,5 +14,10 @@ namespace Pokemons
         public Tipos Tipo { get; set; }
 
         public abstract void Efecto(Pokemon poke1, Pokemon poke2);
+
+        public string GetEstadisticas()
+        {
+            return $"{Nombre}\nTipo: {Tipo}\nDaño: {Daño}";
+        }
     }
 }

@@ -15,9 +15,10 @@ namespace Pokemons.Pokemones
             Nombre = "Blastoise";
             Stats = new Estadisticas()
             {
-                vida = 79,
-                ataque = 83,
-                defensa = 100,
+                ps = 76,
+                vida = 76,
+                ataque = 50,
+                defensa = 60,
                 velocidad = 78
             };
             Ataques = new List<Ataque>
