@@ -71,6 +71,18 @@ namespace ProyectoPrograI
             {
                 LifePoke1.Value = pokemon1.Stats.vida;
                 LifePoke1Lbl.Text = pokemon1.Stats.vida.ToString();
+                if (pokemon1.Stats.vida > pokemon1.Stats.ps * 0.50)
+                {
+                    LifePoke1.ProgressBarColor = Color.Green;
+                }
+                else if (pokemon1.Stats.vida < pokemon1.Stats.ps * 0.50 && pokemon1.Stats.vida > pokemon1.Stats.ps * 0.25)
+                {
+                    LifePoke1.ProgressBarColor = Color.Yellow;
+                }
+                else if (pokemon1.Stats.vida < pokemon1.Stats.ps * 0.25)
+                {
+                    LifePoke1.ProgressBarColor = Color.Red;
+                }
             }
             else
             {
@@ -96,6 +108,18 @@ namespace ProyectoPrograI
             {
                 LifePoke2.Value = pokemon2.Stats.vida;
                 LifePoke2Lbl.Text = pokemon2.Stats.vida.ToString();
+                if(pokemon2.Stats.vida > pokemon2.Stats.ps*0.50)
+                {
+                    LifePoke2.ProgressBarColor = Color.Green;
+                }
+                else if(pokemon2.Stats.vida < pokemon2.Stats.ps*0.50 && pokemon2.Stats.vida > pokemon2.Stats.ps*0.25)
+                {
+                    LifePoke2.ProgressBarColor = Color.Yellow;
+                }
+                else if(pokemon2.Stats.vida < pokemon2.Stats.ps*0.25)
+                {
+                    LifePoke2.ProgressBarColor = Color.Red;
+                }
             }
             else
             {

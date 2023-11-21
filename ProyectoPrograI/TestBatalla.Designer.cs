@@ -45,19 +45,19 @@
             this.Poke2AtkBt4 = new System.Windows.Forms.Button();
             this.Poke2AtkBt2 = new System.Windows.Forms.Button();
             this.Poke2AtkBt1 = new System.Windows.Forms.Button();
-            this.LifePoke2 = new System.Windows.Forms.ProgressBar();
-            this.LifePoke1 = new System.Windows.Forms.ProgressBar();
             this.LifePoke2Lbl = new System.Windows.Forms.Label();
             this.LifePoke1Lbl = new System.Windows.Forms.Label();
             this.CambiarPoke1Lbl = new System.Windows.Forms.Label();
             this.PanelCambiarPoke1 = new System.Windows.Forms.Panel();
+            this.CambiarPoke1Bt = new System.Windows.Forms.Button();
             this.PanelCambiarPoke2 = new System.Windows.Forms.Panel();
             this.CambiarPoke2Lbl = new System.Windows.Forms.Label();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.CambiarPoke2Bt = new System.Windows.Forms.Button();
-            this.CambiarPoke1Bt = new System.Windows.Forms.Button();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.Poke2Img = new System.Windows.Forms.PictureBox();
             this.Poke1Img = new System.Windows.Forms.PictureBox();
+            this.LifePoke2 = new SmoothProgressBar.SmoothProgressBar();
+            this.LifePoke1 = new SmoothProgressBar.SmoothProgressBar();
             this.DialogoBatalla.SuspendLayout();
             this.PanelAtkPoke1.SuspendLayout();
             this.PanelAtkPoke2.SuspendLayout();
@@ -233,24 +233,6 @@
             this.Poke2AtkBt1.UseVisualStyleBackColor = true;
             this.Poke2AtkBt1.Click += new System.EventHandler(this.Poke2AtkBt1_Click);
             // 
-            // LifePoke2
-            // 
-            this.LifePoke2.BackColor = System.Drawing.Color.Firebrick;
-            this.LifePoke2.Enabled = false;
-            this.LifePoke2.ForeColor = System.Drawing.Color.Gold;
-            this.LifePoke2.Location = new System.Drawing.Point(547, 316);
-            this.LifePoke2.MarqueeAnimationSpeed = 0;
-            this.LifePoke2.Name = "LifePoke2";
-            this.LifePoke2.Size = new System.Drawing.Size(189, 23);
-            this.LifePoke2.TabIndex = 5;
-            // 
-            // LifePoke1
-            // 
-            this.LifePoke1.Location = new System.Drawing.Point(58, 316);
-            this.LifePoke1.Name = "LifePoke1";
-            this.LifePoke1.Size = new System.Drawing.Size(189, 23);
-            this.LifePoke1.TabIndex = 5;
-            // 
             // LifePoke2Lbl
             // 
             this.LifePoke2Lbl.AutoSize = true;
@@ -292,6 +274,22 @@
             this.PanelCambiarPoke1.TabIndex = 10;
             this.PanelCambiarPoke1.Visible = false;
             // 
+            // CambiarPoke1Bt
+            // 
+            this.CambiarPoke1Bt.BackgroundImage = global::ProyectoPrograI.Properties.Resources.pokeball;
+            this.CambiarPoke1Bt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CambiarPoke1Bt.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.CambiarPoke1Bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CambiarPoke1Bt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CambiarPoke1Bt.Location = new System.Drawing.Point(8, 10);
+            this.CambiarPoke1Bt.Name = "CambiarPoke1Bt";
+            this.CambiarPoke1Bt.Size = new System.Drawing.Size(43, 41);
+            this.CambiarPoke1Bt.TabIndex = 8;
+            this.CambiarPoke1Bt.Text = "\r\n";
+            this.CambiarPoke1Bt.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.CambiarPoke1Bt.UseVisualStyleBackColor = false;
+            this.CambiarPoke1Bt.Click += new System.EventHandler(this.CambiarPoke1Bt_Click);
+            // 
             // PanelCambiarPoke2
             // 
             this.PanelCambiarPoke2.Controls.Add(this.CambiarPoke2Lbl);
@@ -327,22 +325,6 @@
             this.CambiarPoke2Bt.UseVisualStyleBackColor = false;
             this.CambiarPoke2Bt.Click += new System.EventHandler(this.CambiarPoke2Bt_Click);
             // 
-            // CambiarPoke1Bt
-            // 
-            this.CambiarPoke1Bt.BackgroundImage = global::ProyectoPrograI.Properties.Resources.pokeball;
-            this.CambiarPoke1Bt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CambiarPoke1Bt.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.CambiarPoke1Bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CambiarPoke1Bt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CambiarPoke1Bt.Location = new System.Drawing.Point(8, 10);
-            this.CambiarPoke1Bt.Name = "CambiarPoke1Bt";
-            this.CambiarPoke1Bt.Size = new System.Drawing.Size(43, 41);
-            this.CambiarPoke1Bt.TabIndex = 8;
-            this.CambiarPoke1Bt.Text = "\r\n";
-            this.CambiarPoke1Bt.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.CambiarPoke1Bt.UseVisualStyleBackColor = false;
-            this.CambiarPoke1Bt.Click += new System.EventHandler(this.CambiarPoke1Bt_Click);
-            // 
             // Poke2Img
             // 
             this.Poke2Img.Location = new System.Drawing.Point(547, 118);
@@ -360,6 +342,30 @@
             this.Poke1Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Poke1Img.TabIndex = 1;
             this.Poke1Img.TabStop = false;
+            // 
+            // LifePoke2
+            // 
+            this.LifePoke2.BackColor = System.Drawing.Color.Silver;
+            this.LifePoke2.Location = new System.Drawing.Point(547, 316);
+            this.LifePoke2.Maximum = 100;
+            this.LifePoke2.Minimum = 0;
+            this.LifePoke2.Name = "LifePoke2";
+            this.LifePoke2.ProgressBarColor = System.Drawing.Color.Green;
+            this.LifePoke2.Size = new System.Drawing.Size(189, 21);
+            this.LifePoke2.TabIndex = 12;
+            this.LifePoke2.Value = 0;
+            // 
+            // LifePoke1
+            // 
+            this.LifePoke1.BackColor = System.Drawing.Color.Silver;
+            this.LifePoke1.Location = new System.Drawing.Point(58, 316);
+            this.LifePoke1.Maximum = 100;
+            this.LifePoke1.Minimum = 0;
+            this.LifePoke1.Name = "LifePoke1";
+            this.LifePoke1.ProgressBarColor = System.Drawing.Color.Green;
+            this.LifePoke1.Size = new System.Drawing.Size(189, 21);
+            this.LifePoke1.TabIndex = 12;
+            this.LifePoke1.Value = 0;
             // 
             // TestBatalla
             // 
@@ -414,8 +420,6 @@
         private System.Windows.Forms.Button Poke2AtkBt4;
         private System.Windows.Forms.Button Poke2AtkBt2;
         private System.Windows.Forms.Button Poke2AtkBt1;
-        private System.Windows.Forms.ProgressBar LifePoke2;
-        private System.Windows.Forms.ProgressBar LifePoke1;
         private System.Windows.Forms.Label LifePoke2Lbl;
         private System.Windows.Forms.Label LifePoke1Lbl;
         private System.Windows.Forms.Label Poke2LblSignal;
@@ -427,5 +431,7 @@
         private System.Windows.Forms.Label CambiarPoke2Lbl;
         private System.Windows.Forms.Button CambiarPoke2Bt;
         private System.Windows.Forms.ToolTip toolTip;
+        private SmoothProgressBar.SmoothProgressBar LifePoke2;
+        private SmoothProgressBar.SmoothProgressBar LifePoke1;
     }
 }
