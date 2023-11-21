@@ -22,7 +22,10 @@ namespace Pokemons.Pokemones
             };
             Ataques = new List<Ataque>
             {
-
+                new Bofeton_Lodo(),
+                new Pataleta(),
+                new Terremoto(),
+                new Fuerza_Telurica()
             };
             Imagen = Resources.Diglett;
         }

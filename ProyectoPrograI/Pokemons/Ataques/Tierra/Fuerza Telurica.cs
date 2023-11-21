@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Pokemons.Ataques
 {
-    class Fuego_Fatuo : Ataque
+    class Fuerza_Telurica : Ataque
     {
-        public Fuego_Fatuo()
+        public Fuerza_Telurica() 
         {
-            Abreviatura = "Fuf";
-            Nombre = "Fuego Fatuo";
-            Daño = 11;
-            Tipo = Tipos.Fuego;
+            Abreviatura = "Fut";
+            Nombre = "Fuerza Telurica";
+            Daño = 10;
+            Tipo = Tipos.Tierra;
         }
 
         public override void Efecto(Pokemon poke1, Pokemon poke2)
         {
-            Console.WriteLine("Fuego Fatuo");
+            Console.WriteLine("Fuerza Telurica");
         }
     }
 }

@@ -22,7 +22,10 @@ namespace Pokemons.Pokemones
             };
             Ataques = new List<Ataque>
             {
-
+                new Placaje(),
+                new Pedrada(),
+                new Roca_Afilada(),
+                new Rompe_Roca()
             };
             Imagen = Resources.Geodude;
         }

@@ -22,7 +22,10 @@ namespace Pokemons.Pokemones
             };
             Ataques = new List<Ataque>
             {
-                new Ascuas()
+                new Ascuas(),
+                new Fuego_Fatuo(),
+                new LLamarada(),
+                new Nitrocarga()
             };
             Imagen = Resources.Charizard;
         }

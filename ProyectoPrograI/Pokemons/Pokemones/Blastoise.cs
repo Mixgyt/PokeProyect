@@ -22,7 +22,10 @@ namespace Pokemons.Pokemones
             };
             Ataques = new List<Ataque>
             {
-
+                new Empapar(),
+                new Chorro_de_Agua(),
+                new Hidropulso(),
+                new Hidrovapor()
             };
             Imagen = Resources.Blastoise;
         }

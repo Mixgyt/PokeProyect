@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Pokemons.Ataques
 {
-    class Fuego_Fatuo : Ataque
+    class Pedrada : Ataque
     {
-        public Fuego_Fatuo()
+        public Pedrada() 
         {
-            Abreviatura = "Fuf";
-            Nombre = "Fuego Fatuo";
-            Daño = 11;
-            Tipo = Tipos.Fuego;
+            Abreviatura = "Ped";
+            Nombre = "Pedrada";
+            Daño = 18;
+            Tipo = Tipos.Roca;
         }
 
         public override void Efecto(Pokemon poke1, Pokemon poke2)
         {
-            Console.WriteLine("Fuego Fatuo");
+            Console.WriteLine("Pedrada");
         }
     }
 }

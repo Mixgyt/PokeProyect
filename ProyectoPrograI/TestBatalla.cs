@@ -20,18 +20,23 @@ namespace ProyectoPrograI
         private Pokemon pokemon1 { get; set; }
         private Pokemon pokemon2 { get; set; }
 
+        private Entrenador entrenador1 { get; set; }
+        private Entrenador entrenador2 { get; set; }
+
         int iterable;
 
         public TestBatalla()
         {
             InitializeComponent();
-            pokemon1 = new Pikachu();
-            pokemon2 = new Bulbasaur();
+            entrenador1 = new Entrenador1();
+            entrenador2 = new Entrenador2();
+
+            pokemon1 = entrenador1.CambiarPokemon(0);
+            pokemon2 = entrenador2.CambiarPokemon(0);
         }
 
         private void TestBatalla_Load(object sender, EventArgs e)
-        {
-            
+        {   
             //Poke1Img.Image.RotateFlip(RotateFlipType.Rotate180FlipY);
             LifePoke1.Maximum = pokemon1.Stats.vida;
 
@@ -39,6 +44,15 @@ namespace ProyectoPrograI
             LifePoke2.Maximum = pokemon2.Stats.vida;
             RecargarDatos();
             nuevoTurno();
+        }
+
+        private void NuevosDatos()
+        {
+            LifePoke1.Maximum = pokemon1.Stats.vida;
+            //Poke1Img.Image.RotateFlip(RotateFlipType.Rotate180FlipY);
+
+            LifePoke2.Maximum = pokemon2.Stats.vida;
+            RecargarDatos();
         }
 
         private void RecargarDatos()
@@ -109,7 +123,9 @@ namespace ProyectoPrograI
             if(iterable < 2) 
             {
                 PanelAtkPoke2.Visible = false;
+                PanelCambiarPoke2.Visible = false;
                 PanelAtkPoke1.Visible = true;
+                PanelCambiarPoke1.Visible = true;
             }
             else
             {
@@ -123,7 +139,9 @@ namespace ProyectoPrograI
             if (iterable < 2)
             { 
                 PanelAtkPoke1.Visible = false;
-                PanelAtkPoke2.Visible = true; 
+                PanelCambiarPoke1.Visible = false;
+                PanelAtkPoke2.Visible = true;
+                PanelCambiarPoke2.Visible = true;
             }
             else
             {
@@ -212,5 +230,38 @@ namespace ProyectoPrograI
             iterable++;
             Pokemon1Ataca();
         }
+        private void CambiarPoke1Bt_Click(object sender, EventArgs e)
+        {
+            SeleccionPokemon form = new SeleccionPokemon();
+            form.entrenador = entrenador1;
+            var result = form.ShowDialog();
+
+
+            if (result == DialogResult.OK)
+            {
+                pokemon1 = form.pokemonSeleccionado;
+                NuevosDatos();
+                iterable++;
+                Pokemon2Ataca();
+            }
+        }
+
+        private void CambiarPoke2Bt_Click(object sender, EventArgs e)
+        {
+            SeleccionPokemon form = new SeleccionPokemon();
+            form.entrenador = entrenador2;
+            var result = form.ShowDialog();
+
+
+            if (result == DialogResult.OK)
+            {
+                pokemon2 = form.pokemonSeleccionado;
+                NuevosDatos();
+                iterable++;
+                Pokemon1Ataca();
+            }
+        }
+
+        
     }
 }

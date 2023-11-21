@@ -70,19 +70,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entrenador.cs" />
-    <Compile Include="Pokemons\Ataques\Chorro de Agua.cs" />
+    <Compile Include="Pokemons\Ataques\Agua\Chorro de Agua.cs" />
+    <Compile Include="Pokemons\Ataques\Roca\Roca Afilada.cs" />
+    <Compile Include="Pokemons\Ataques\Roca\Rompe Roca.cs" />
+    <Compile Include="Pokemons\Ataques\Tierra\Bofeton Lodo.cs" />
     <Compile Include="Pokemons\Ataques\Derribo.cs" />
     <Compile Include="Pokemons\Ataques\Electrico\Altovoltaje.cs" />
     <Compile Include="Pokemons\Ataques\Electrico\Electrotela.cs" />
+    <Compile Include="Pokemons\Ataques\Agua\Empapar.cs" />
     <Compile Include="Pokemons\Ataques\Fuego\Fuego Fatuo.cs" />
     <Compile Include="Pokemons\Ataques\Electrico\Impactrueno.cs" />
     <Compile Include="Pokemons\Ataques\Electrico\Electrobola.cs" />
     <Compile Include="Pokemons\Ataques\Fuego\Ascuas.cs" />
+    <Compile Include="Pokemons\Ataques\Agua\Hidropulso.cs" />
+    <Compile Include="Pokemons\Ataques\Agua\Hidrovapor.cs" />
+    <Compile Include="Pokemons\Ataques\Tierra\Fuerza Telurica.cs" />
     <Compile Include="Pokemons\Ataques\Hierva\Hoja Afilada.cs" />
     <Compile Include="Pokemons\Ataques\Hierva\Latigo Cepa.cs" />
     <Compile Include="Pokemons\Ataques\Fuego\LLamarada.cs" />
     <Compile Include="Pokemons\Ataques\Fuego\Nitrocarga.cs" />
+    <Compile Include="Pokemons\Ataques\Tierra\Pataleta.cs" />
     <Compile Include="Pokemons\Ataques\Placaje.cs" />
+    <Compile Include="Pokemons\Ataques\Tierra\Terremoto.cs" />
+    <Compile Include="Pokemons\Ataques\Roca\Pedrada.cs" />
     <Compile Include="Pokemons\Pokemones.cs" />
     <Compile Include="Pokedex.cs">
       <SubType>Form</SubType>
@@ -114,6 +124,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SeleccionPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionPokemon.Designer.cs">
+      <DependentUpon>SeleccionPokemon.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestBatalla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +144,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionPokemon.resx">
+      <DependentUpon>SeleccionPokemon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestBatalla.resx">
       <DependentUpon>TestBatalla.cs</DependentUpon>
@@ -147,6 +166,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Recursos\pokeball.png" />
     <Content Include="Recursos\Pokemons\Blastoise.png" />
     <Content Include="Recursos\Pokemons\Bulbasaur.png" />
     <Content Include="Recursos\Pokemons\Charizard.png" />
@@ -155,8 +175,6 @@
     <Content Include="Recursos\Pokemons\Missingno.png" />
     <Content Include="Recursos\Pokemons\Pikachu.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pokemons\Ataques\Agua\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

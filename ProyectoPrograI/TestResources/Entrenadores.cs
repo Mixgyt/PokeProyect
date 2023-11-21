@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Pokemons;
+using Pokemons.Pokemones;
 
 namespace ProyectoPrograI
 {
@@ -14,7 +15,9 @@ namespace ProyectoPrograI
             Nombre = "Entrenador 1";
             Equipo = new List<Pokemon>()
             {
-                
+                new Bulbasaur(),
+                new Diglett(),
+                new Blastoise()
             };
         }
     }
@@ -26,7 +29,9 @@ namespace ProyectoPrograI
             Nombre = "Entrenador 2";
             Equipo = new List<Pokemon>()
             {
-                
+                new Pikachu(),
+                new Geodude(),
+                new Charizard()
             };
         }
     }

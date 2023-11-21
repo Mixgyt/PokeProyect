@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Pokemons.Ataques
 {
-    class Fuego_Fatuo : Ataque
+    class Bofeton_Lodo : Ataque
     {
-        public Fuego_Fatuo()
+        public Bofeton_Lodo() 
         {
-            Abreviatura = "Fuf";
-            Nombre = "Fuego Fatuo";
-            Daño = 11;
-            Tipo = Tipos.Fuego;
+            Abreviatura = "Bfl";
+            Nombre = "Bofeton Lodo";
+            Daño = 7;
+            Tipo = Tipos.Tierra;
         }
 
         public override void Efecto(Pokemon poke1, Pokemon poke2)
         {
-            Console.WriteLine("Fuego Fatuo");
+            Console.WriteLine("Bofeton Lodo");
         }
     }
 }

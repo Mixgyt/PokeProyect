@@ -48,13 +48,21 @@
             this.LifePoke1 = new System.Windows.Forms.ProgressBar();
             this.LifePoke2Lbl = new System.Windows.Forms.Label();
             this.LifePoke1Lbl = new System.Windows.Forms.Label();
+            this.CambiarPoke1Lbl = new System.Windows.Forms.Label();
+            this.CambiarPoke1Bt = new System.Windows.Forms.Button();
             this.Poke2Img = new System.Windows.Forms.PictureBox();
             this.Poke1Img = new System.Windows.Forms.PictureBox();
+            this.PanelCambiarPoke1 = new System.Windows.Forms.Panel();
+            this.PanelCambiarPoke2 = new System.Windows.Forms.Panel();
+            this.CambiarPoke2Lbl = new System.Windows.Forms.Label();
+            this.CambiarPoke2Bt = new System.Windows.Forms.Button();
             this.DialogoBatalla.SuspendLayout();
             this.PanelAtkPoke1.SuspendLayout();
             this.PanelAtkPoke2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Poke2Img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Poke1Img)).BeginInit();
+            this.PanelCambiarPoke1.SuspendLayout();
+            this.PanelCambiarPoke2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Poke1AtkBt1
@@ -263,9 +271,33 @@
             this.LifePoke1Lbl.TabIndex = 6;
             this.LifePoke1Lbl.Text = "0/0";
             // 
+            // CambiarPoke1Lbl
+            // 
+            this.CambiarPoke1Lbl.AutoSize = true;
+            this.CambiarPoke1Lbl.Location = new System.Drawing.Point(7, 50);
+            this.CambiarPoke1Lbl.Name = "CambiarPoke1Lbl";
+            this.CambiarPoke1Lbl.Size = new System.Drawing.Size(45, 13);
+            this.CambiarPoke1Lbl.TabIndex = 9;
+            this.CambiarPoke1Lbl.Text = "Cambiar";
+            // 
+            // CambiarPoke1Bt
+            // 
+            this.CambiarPoke1Bt.BackgroundImage = global::ProyectoPrograI.Properties.Resources.pokeball;
+            this.CambiarPoke1Bt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CambiarPoke1Bt.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.CambiarPoke1Bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CambiarPoke1Bt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CambiarPoke1Bt.Location = new System.Drawing.Point(8, 10);
+            this.CambiarPoke1Bt.Name = "CambiarPoke1Bt";
+            this.CambiarPoke1Bt.Size = new System.Drawing.Size(43, 41);
+            this.CambiarPoke1Bt.TabIndex = 8;
+            this.CambiarPoke1Bt.Text = "\r\n";
+            this.CambiarPoke1Bt.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.CambiarPoke1Bt.UseVisualStyleBackColor = false;
+            this.CambiarPoke1Bt.Click += new System.EventHandler(this.CambiarPoke1Bt_Click);
+            // 
             // Poke2Img
             // 
-            this.Poke2Img.InitialImage = global::ProyectoPrograI.Properties.Resources.Missingno;
             this.Poke2Img.Location = new System.Drawing.Point(547, 118);
             this.Poke2Img.Name = "Poke2Img";
             this.Poke2Img.Size = new System.Drawing.Size(189, 174);
@@ -275,7 +307,6 @@
             // 
             // Poke1Img
             // 
-            this.Poke1Img.InitialImage = global::ProyectoPrograI.Properties.Resources.Missingno;
             this.Poke1Img.Location = new System.Drawing.Point(58, 118);
             this.Poke1Img.Name = "Poke1Img";
             this.Poke1Img.Size = new System.Drawing.Size(189, 174);
@@ -283,11 +314,58 @@
             this.Poke1Img.TabIndex = 1;
             this.Poke1Img.TabStop = false;
             // 
+            // PanelCambiarPoke1
+            // 
+            this.PanelCambiarPoke1.Controls.Add(this.CambiarPoke1Lbl);
+            this.PanelCambiarPoke1.Controls.Add(this.CambiarPoke1Bt);
+            this.PanelCambiarPoke1.Location = new System.Drawing.Point(721, 452);
+            this.PanelCambiarPoke1.Name = "PanelCambiarPoke1";
+            this.PanelCambiarPoke1.Size = new System.Drawing.Size(66, 66);
+            this.PanelCambiarPoke1.TabIndex = 10;
+            this.PanelCambiarPoke1.Visible = false;
+            // 
+            // PanelCambiarPoke2
+            // 
+            this.PanelCambiarPoke2.Controls.Add(this.CambiarPoke2Lbl);
+            this.PanelCambiarPoke2.Controls.Add(this.CambiarPoke2Bt);
+            this.PanelCambiarPoke2.Location = new System.Drawing.Point(722, 445);
+            this.PanelCambiarPoke2.Name = "PanelCambiarPoke2";
+            this.PanelCambiarPoke2.Size = new System.Drawing.Size(66, 66);
+            this.PanelCambiarPoke2.TabIndex = 10;
+            this.PanelCambiarPoke2.Visible = false;
+            // 
+            // CambiarPoke2Lbl
+            // 
+            this.CambiarPoke2Lbl.AutoSize = true;
+            this.CambiarPoke2Lbl.Location = new System.Drawing.Point(7, 50);
+            this.CambiarPoke2Lbl.Name = "CambiarPoke2Lbl";
+            this.CambiarPoke2Lbl.Size = new System.Drawing.Size(45, 13);
+            this.CambiarPoke2Lbl.TabIndex = 9;
+            this.CambiarPoke2Lbl.Text = "Cambiar";
+            // 
+            // CambiarPoke2Bt
+            // 
+            this.CambiarPoke2Bt.BackgroundImage = global::ProyectoPrograI.Properties.Resources.pokeball;
+            this.CambiarPoke2Bt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CambiarPoke2Bt.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.CambiarPoke2Bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CambiarPoke2Bt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CambiarPoke2Bt.Location = new System.Drawing.Point(8, 10);
+            this.CambiarPoke2Bt.Name = "CambiarPoke2Bt";
+            this.CambiarPoke2Bt.Size = new System.Drawing.Size(43, 41);
+            this.CambiarPoke2Bt.TabIndex = 8;
+            this.CambiarPoke2Bt.Text = "\r\n";
+            this.CambiarPoke2Bt.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.CambiarPoke2Bt.UseVisualStyleBackColor = false;
+            this.CambiarPoke2Bt.Click += new System.EventHandler(this.CambiarPoke2Bt_Click);
+            // 
             // TestBatalla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.ClientSize = new System.Drawing.Size(811, 545);
+            this.Controls.Add(this.PanelCambiarPoke2);
+            this.Controls.Add(this.PanelCambiarPoke1);
             this.Controls.Add(this.Poke2Lbl);
             this.Controls.Add(this.Poke2Img);
             this.Controls.Add(this.LifePoke2Lbl);
@@ -307,6 +385,10 @@
             this.PanelAtkPoke2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Poke2Img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Poke1Img)).EndInit();
+            this.PanelCambiarPoke1.ResumeLayout(false);
+            this.PanelCambiarPoke1.PerformLayout();
+            this.PanelCambiarPoke2.ResumeLayout(false);
+            this.PanelCambiarPoke2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +418,11 @@
         private System.Windows.Forms.Label LifePoke1Lbl;
         private System.Windows.Forms.Label Poke2LblSignal;
         private System.Windows.Forms.Label Poke1LblSignal;
+        private System.Windows.Forms.Button CambiarPoke1Bt;
+        private System.Windows.Forms.Label CambiarPoke1Lbl;
+        private System.Windows.Forms.Panel PanelCambiarPoke1;
+        private System.Windows.Forms.Panel PanelCambiarPoke2;
+        private System.Windows.Forms.Label CambiarPoke2Lbl;
+        private System.Windows.Forms.Button CambiarPoke2Bt;
     }
 }
