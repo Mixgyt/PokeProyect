@@ -149,5 +149,15 @@ namespace ProyectoPrograI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon pokeball_ico {
+            get {
+                object obj = ResourceManager.GetObject("pokeball_ico", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }
