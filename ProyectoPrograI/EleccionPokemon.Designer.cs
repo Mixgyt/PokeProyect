@@ -1,5 +1,4 @@
 ﻿using System.Windows.Forms;
-using System.Drawing;
 
 namespace ProyectoPrograI
 {
@@ -66,8 +65,12 @@ namespace ProyectoPrograI
             this.btnbatalla = new System.Windows.Forms.Button();
             this.Equipo2 = new System.Windows.Forms.ListBox();
             this.Equipo1 = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbpokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbestadistica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnderecha
@@ -77,7 +80,7 @@ namespace ProyectoPrograI
             this.btnderecha.IconColor = System.Drawing.Color.Black;
             this.btnderecha.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnderecha.IconSize = 30;
-            this.btnderecha.Location = new System.Drawing.Point(469, 332);
+            this.btnderecha.Location = new System.Drawing.Point(473, 336);
             this.btnderecha.Name = "btnderecha";
             this.btnderecha.Size = new System.Drawing.Size(39, 32);
             this.btnderecha.TabIndex = 0;
@@ -91,7 +94,7 @@ namespace ProyectoPrograI
             this.btnizquierda.IconColor = System.Drawing.Color.Black;
             this.btnizquierda.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnizquierda.IconSize = 30;
-            this.btnizquierda.Location = new System.Drawing.Point(236, 332);
+            this.btnizquierda.Location = new System.Drawing.Point(240, 336);
             this.btnizquierda.Name = "btnizquierda";
             this.btnizquierda.Size = new System.Drawing.Size(39, 32);
             this.btnizquierda.TabIndex = 1;
@@ -133,10 +136,11 @@ namespace ProyectoPrograI
             // 
             // pcbestadistica
             // 
+            this.pcbestadistica.BackColor = System.Drawing.Color.Transparent;
             this.pcbestadistica.Image = ((System.Drawing.Image)(resources.GetObject("pcbestadistica.Image")));
-            this.pcbestadistica.Location = new System.Drawing.Point(293, 180);
+            this.pcbestadistica.Location = new System.Drawing.Point(293, 172);
             this.pcbestadistica.Name = "pcbestadistica";
-            this.pcbestadistica.Size = new System.Drawing.Size(163, 148);
+            this.pcbestadistica.Size = new System.Drawing.Size(170, 166);
             this.pcbestadistica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbestadistica.TabIndex = 3;
             this.pcbestadistica.TabStop = false;
@@ -144,7 +148,9 @@ namespace ProyectoPrograI
             // tipo
             // 
             this.tipo.AutoSize = true;
+            this.tipo.BackColor = System.Drawing.Color.Transparent;
             this.tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.tipo.ForeColor = System.Drawing.Color.Black;
             this.tipo.Location = new System.Drawing.Point(312, 131);
             this.tipo.Name = "tipo";
             this.tipo.Size = new System.Drawing.Size(46, 18);
@@ -155,7 +161,8 @@ namespace ProyectoPrograI
             // 
             this.btnjugador1.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.btnjugador1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnjugador1.Location = new System.Drawing.Point(281, 332);
+            this.btnjugador1.ForeColor = System.Drawing.Color.Black;
+            this.btnjugador1.Location = new System.Drawing.Point(285, 336);
             this.btnjugador1.Name = "btnjugador1";
             this.btnjugador1.Size = new System.Drawing.Size(87, 28);
             this.btnjugador1.TabIndex = 5;
@@ -166,7 +173,9 @@ namespace ProyectoPrograI
             // lbltipos
             // 
             this.lbltipos.AutoSize = true;
+            this.lbltipos.BackColor = System.Drawing.Color.Transparent;
             this.lbltipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbltipos.ForeColor = System.Drawing.Color.Black;
             this.lbltipos.Location = new System.Drawing.Point(379, 131);
             this.lbltipos.Name = "lbltipos";
             this.lbltipos.Size = new System.Drawing.Size(52, 18);
@@ -176,7 +185,9 @@ namespace ProyectoPrograI
             // lblnombres
             // 
             this.lblnombres.AutoSize = true;
+            this.lblnombres.BackColor = System.Drawing.Color.Transparent;
             this.lblnombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblnombres.ForeColor = System.Drawing.Color.Black;
             this.lblnombres.Location = new System.Drawing.Point(344, 9);
             this.lblnombres.Name = "lblnombres";
             this.lblnombres.Size = new System.Drawing.Size(52, 18);
@@ -186,20 +197,24 @@ namespace ProyectoPrograI
             // lblvida
             // 
             this.lblvida.AutoSize = true;
-            this.lblvida.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.lblvida.Location = new System.Drawing.Point(298, 160);
+            this.lblvida.BackColor = System.Drawing.Color.Transparent;
+            this.lblvida.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvida.ForeColor = System.Drawing.Color.Black;
+            this.lblvida.Location = new System.Drawing.Point(295, 155);
             this.lblvida.Name = "lblvida";
-            this.lblvida.Size = new System.Drawing.Size(42, 20);
+            this.lblvida.Size = new System.Drawing.Size(37, 17);
             this.lblvida.TabIndex = 9;
             this.lblvida.Text = "Vida:";
             // 
             // ataque
             // 
             this.ataque.AutoSize = true;
-            this.ataque.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.ataque.Location = new System.Drawing.Point(298, 203);
+            this.ataque.BackColor = System.Drawing.Color.Transparent;
+            this.ataque.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ataque.ForeColor = System.Drawing.Color.Black;
+            this.ataque.Location = new System.Drawing.Point(295, 201);
             this.ataque.Name = "ataque";
-            this.ataque.Size = new System.Drawing.Size(60, 20);
+            this.ataque.Size = new System.Drawing.Size(52, 17);
             this.ataque.TabIndex = 10;
             this.ataque.Text = "Ataque:";
             // 
@@ -207,48 +222,56 @@ namespace ProyectoPrograI
             // 
             this.defensa.AutoSize = true;
             this.defensa.BackColor = System.Drawing.Color.Transparent;
-            this.defensa.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.defensa.Location = new System.Drawing.Point(298, 243);
+            this.defensa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.defensa.ForeColor = System.Drawing.Color.Black;
+            this.defensa.Location = new System.Drawing.Point(295, 243);
             this.defensa.Name = "defensa";
-            this.defensa.Size = new System.Drawing.Size(66, 20);
+            this.defensa.Size = new System.Drawing.Size(58, 17);
             this.defensa.TabIndex = 11;
             this.defensa.Text = "Defensa:";
             // 
             // velocidad
             // 
             this.velocidad.AutoSize = true;
-            this.velocidad.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.velocidad.Location = new System.Drawing.Point(297, 284);
+            this.velocidad.BackColor = System.Drawing.Color.Transparent;
+            this.velocidad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.velocidad.ForeColor = System.Drawing.Color.Black;
+            this.velocidad.Location = new System.Drawing.Point(295, 288);
             this.velocidad.Name = "velocidad";
-            this.velocidad.Size = new System.Drawing.Size(78, 20);
+            this.velocidad.Size = new System.Drawing.Size(68, 17);
             this.velocidad.TabIndex = 12;
             this.velocidad.Text = "Velocidad:";
             // 
             // lblvidas
             // 
             this.lblvidas.AutoSize = true;
-            this.lblvidas.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvidas.Location = new System.Drawing.Point(344, 160);
+            this.lblvidas.BackColor = System.Drawing.Color.Transparent;
+            this.lblvidas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvidas.ForeColor = System.Drawing.Color.Black;
+            this.lblvidas.Location = new System.Drawing.Point(340, 155);
             this.lblvidas.Name = "lblvidas";
-            this.lblvidas.Size = new System.Drawing.Size(36, 20);
+            this.lblvidas.Size = new System.Drawing.Size(29, 17);
             this.lblvidas.TabIndex = 13;
             this.lblvidas.Text = "100";
             // 
             // lblataques
             // 
             this.lblataques.AutoSize = true;
-            this.lblataques.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblataques.Location = new System.Drawing.Point(360, 203);
+            this.lblataques.BackColor = System.Drawing.Color.Transparent;
+            this.lblataques.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblataques.ForeColor = System.Drawing.Color.Black;
+            this.lblataques.Location = new System.Drawing.Point(344, 201);
             this.lblataques.Name = "lblataques";
-            this.lblataques.Size = new System.Drawing.Size(36, 20);
+            this.lblataques.Size = new System.Drawing.Size(29, 17);
             this.lblataques.TabIndex = 14;
             this.lblataques.Text = "100";
             // 
             // lbldefensa
             // 
             this.lbldefensa.BackColor = System.Drawing.Color.Transparent;
-            this.lbldefensa.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldefensa.Location = new System.Drawing.Point(360, 243);
+            this.lbldefensa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldefensa.ForeColor = System.Drawing.Color.Black;
+            this.lbldefensa.Location = new System.Drawing.Point(350, 243);
             this.lbldefensa.Name = "lbldefensa";
             this.lbldefensa.Size = new System.Drawing.Size(56, 20);
             this.lbldefensa.TabIndex = 15;
@@ -257,11 +280,12 @@ namespace ProyectoPrograI
             // lblvelocidad
             // 
             this.lblvelocidad.AutoSize = true;
-            this.lblvelocidad.BackColor = System.Drawing.SystemColors.Control;
-            this.lblvelocidad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvelocidad.Location = new System.Drawing.Point(380, 284);
+            this.lblvelocidad.BackColor = System.Drawing.Color.Transparent;
+            this.lblvelocidad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvelocidad.ForeColor = System.Drawing.Color.Black;
+            this.lblvelocidad.Location = new System.Drawing.Point(360, 288);
             this.lblvelocidad.Name = "lblvelocidad";
-            this.lblvelocidad.Size = new System.Drawing.Size(36, 20);
+            this.lblvelocidad.Size = new System.Drawing.Size(29, 17);
             this.lblvelocidad.TabIndex = 16;
             this.lblvelocidad.Text = "100";
             // 
@@ -276,8 +300,10 @@ namespace ProyectoPrograI
             // lbljugador1
             // 
             this.lbljugador1.AutoSize = true;
+            this.lbljugador1.BackColor = System.Drawing.Color.Transparent;
             this.lbljugador1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lbljugador1.Location = new System.Drawing.Point(77, 33);
+            this.lbljugador1.ForeColor = System.Drawing.Color.Black;
+            this.lbljugador1.Location = new System.Drawing.Point(103, 37);
             this.lbljugador1.Name = "lbljugador1";
             this.lbljugador1.Size = new System.Drawing.Size(83, 18);
             this.lbljugador1.TabIndex = 18;
@@ -286,8 +312,10 @@ namespace ProyectoPrograI
             // lbljugador2
             // 
             this.lbljugador2.AutoSize = true;
+            this.lbljugador2.BackColor = System.Drawing.Color.Transparent;
             this.lbljugador2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lbljugador2.Location = new System.Drawing.Point(594, 33);
+            this.lbljugador2.ForeColor = System.Drawing.Color.Black;
+            this.lbljugador2.Location = new System.Drawing.Point(603, 37);
             this.lbljugador2.Name = "lbljugador2";
             this.lbljugador2.Size = new System.Drawing.Size(83, 18);
             this.lbljugador2.TabIndex = 19;
@@ -296,40 +324,48 @@ namespace ProyectoPrograI
             // njugador1
             // 
             this.njugador1.AutoSize = true;
-            this.njugador1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.njugador1.Location = new System.Drawing.Point(17, 67);
+            this.njugador1.BackColor = System.Drawing.Color.Transparent;
+            this.njugador1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.njugador1.ForeColor = System.Drawing.Color.Black;
+            this.njugador1.Location = new System.Drawing.Point(6, 70);
             this.njugador1.Name = "njugador1";
-            this.njugador1.Size = new System.Drawing.Size(67, 20);
+            this.njugador1.Size = new System.Drawing.Size(71, 20);
             this.njugador1.TabIndex = 20;
             this.njugador1.Text = "Nombre:";
             // 
             // njugador2
             // 
             this.njugador2.AutoSize = true;
-            this.njugador2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.njugador2.Location = new System.Drawing.Point(522, 68);
+            this.njugador2.BackColor = System.Drawing.Color.Transparent;
+            this.njugador2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.njugador2.ForeColor = System.Drawing.Color.Black;
+            this.njugador2.Location = new System.Drawing.Point(510, 68);
             this.njugador2.Name = "njugador2";
-            this.njugador2.Size = new System.Drawing.Size(67, 20);
+            this.njugador2.Size = new System.Drawing.Size(71, 20);
             this.njugador2.TabIndex = 21;
             this.njugador2.Text = "Nombre:";
             // 
             // lblequipo
             // 
             this.lblequipo.AutoSize = true;
-            this.lblequipo.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.lblequipo.Location = new System.Drawing.Point(94, 140);
+            this.lblequipo.BackColor = System.Drawing.Color.Transparent;
+            this.lblequipo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblequipo.ForeColor = System.Drawing.Color.Black;
+            this.lblequipo.Location = new System.Drawing.Point(67, 147);
             this.lblequipo.Name = "lblequipo";
-            this.lblequipo.Size = new System.Drawing.Size(59, 20);
+            this.lblequipo.Size = new System.Drawing.Size(61, 20);
             this.lblequipo.TabIndex = 26;
             this.lblequipo.Text = "Equipo:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label2.Location = new System.Drawing.Point(608, 141);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(623, 147);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
+            this.label2.Size = new System.Drawing.Size(61, 20);
             this.label2.TabIndex = 27;
             this.label2.Text = "Equipo:";
             // 
@@ -337,7 +373,8 @@ namespace ProyectoPrograI
             // 
             this.btneliminar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btneliminar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btneliminar1.Location = new System.Drawing.Point(82, 311);
+            this.btneliminar1.ForeColor = System.Drawing.Color.Black;
+            this.btneliminar1.Location = new System.Drawing.Point(61, 311);
             this.btneliminar1.Name = "btneliminar1";
             this.btneliminar1.Size = new System.Drawing.Size(78, 27);
             this.btneliminar1.TabIndex = 28;
@@ -349,7 +386,8 @@ namespace ProyectoPrograI
             // 
             this.btneliminar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btneliminar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btneliminar2.Location = new System.Drawing.Point(604, 311);
+            this.btneliminar2.ForeColor = System.Drawing.Color.Black;
+            this.btneliminar2.Location = new System.Drawing.Point(615, 311);
             this.btneliminar2.Name = "btneliminar2";
             this.btneliminar2.Size = new System.Drawing.Size(83, 27);
             this.btneliminar2.TabIndex = 29;
@@ -359,7 +397,7 @@ namespace ProyectoPrograI
             // 
             // txtnombre1
             // 
-            this.txtnombre1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtnombre1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre1.Location = new System.Drawing.Point(80, 68);
             this.txtnombre1.Name = "txtnombre1";
             this.txtnombre1.Size = new System.Drawing.Size(133, 25);
@@ -367,16 +405,18 @@ namespace ProyectoPrograI
             // 
             // txtnombre2
             // 
+            this.txtnombre2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre2.Location = new System.Drawing.Point(585, 69);
             this.txtnombre2.Name = "txtnombre2";
-            this.txtnombre2.Size = new System.Drawing.Size(130, 20);
+            this.txtnombre2.Size = new System.Drawing.Size(130, 25);
             this.txtnombre2.TabIndex = 31;
             // 
             // btnjugador2
             // 
             this.btnjugador2.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.btnjugador2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnjugador2.Location = new System.Drawing.Point(374, 332);
+            this.btnjugador2.ForeColor = System.Drawing.Color.Black;
+            this.btnjugador2.Location = new System.Drawing.Point(378, 336);
             this.btnjugador2.Name = "btnjugador2";
             this.btnjugador2.Size = new System.Drawing.Size(89, 28);
             this.btnjugador2.TabIndex = 32;
@@ -388,7 +428,8 @@ namespace ProyectoPrograI
             // 
             this.btnbatalla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnbatalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnbatalla.Location = new System.Drawing.Point(311, 378);
+            this.btnbatalla.ForeColor = System.Drawing.Color.Black;
+            this.btnbatalla.Location = new System.Drawing.Point(304, 378);
             this.btnbatalla.Name = "btnbatalla";
             this.btnbatalla.Size = new System.Drawing.Size(130, 29);
             this.btnbatalla.TabIndex = 33;
@@ -398,32 +439,57 @@ namespace ProyectoPrograI
             // 
             // Equipo2
             // 
-            this.Equipo2.BackColor = System.Drawing.SystemColors.Control;
+            this.Equipo2.BackColor = System.Drawing.Color.White;
             this.Equipo2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Equipo2.FormattingEnabled = true;
             this.Equipo2.ItemHeight = 20;
-            this.Equipo2.Location = new System.Drawing.Point(576, 172);
+            this.Equipo2.Location = new System.Drawing.Point(587, 172);
             this.Equipo2.Name = "Equipo2";
             this.Equipo2.Size = new System.Drawing.Size(139, 124);
             this.Equipo2.TabIndex = 34;
             // 
             // Equipo1
             // 
-            this.Equipo1.BackColor = System.Drawing.SystemColors.Control;
+            this.Equipo1.BackColor = System.Drawing.Color.White;
             this.Equipo1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Equipo1.FormattingEnabled = true;
             this.Equipo1.ItemHeight = 20;
-            this.Equipo1.Location = new System.Drawing.Point(59, 172);
+            this.Equipo1.Location = new System.Drawing.Point(38, 172);
             this.Equipo1.Name = "Equipo1";
             this.Equipo1.Size = new System.Drawing.Size(139, 124);
             this.Equipo1.TabIndex = 34;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::ProyectoPrograI.Properties.Resources.poke_bola_invertida;
+            this.pictureBox1.Location = new System.Drawing.Point(514, 238);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 67);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::ProyectoPrograI.Properties.Resources.poke_bola;
+            this.pictureBox2.Location = new System.Drawing.Point(183, 238);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(68, 67);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 35;
+            this.pictureBox2.TabStop = false;
             // 
             // EleccionPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(771, 419);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Equipo1);
             this.Controls.Add(this.Equipo2);
             this.Controls.Add(this.btnbatalla);
@@ -455,12 +521,19 @@ namespace ProyectoPrograI
             this.Controls.Add(this.pcbpokemon);
             this.Controls.Add(this.btnizquierda);
             this.Controls.Add(this.btnderecha);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "EleccionPokemon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eleccion Pokemon";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbpokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbestadistica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -501,5 +574,7 @@ namespace ProyectoPrograI
         private System.Windows.Forms.Button btnbatalla;
         private ListBox Equipo2;
         private ListBox Equipo1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

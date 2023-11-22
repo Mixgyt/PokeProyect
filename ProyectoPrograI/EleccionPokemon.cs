@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using ProyectoPrograI.Properties;
 using System.Windows.Controls;
 using System.Threading;
+using System.Media;
 
 namespace ProyectoPrograI
 {
@@ -30,6 +31,8 @@ namespace ProyectoPrograI
             {249, 247, 130},
         };
 
+        private SoundPlayer player;
+
         public EleccionPokemon()
         {
             InitializeComponent();
@@ -37,7 +40,10 @@ namespace ProyectoPrograI
                 new Blastoise(), new Bulbasaur(), 
                 new Charizard(), new Diglett(),
                 new Geodude(), new Pikachu()
-                };
+            };
+
+            player = new SoundPlayer(Resources.sonido_eleccion);
+            player.PlayLooping();
         }
         int count = 0;
 
@@ -91,11 +97,54 @@ namespace ProyectoPrograI
             lblvelocidad.Text = pokemons[count].Stats.velocidad.ToString();
         }
 
+        private Entrenador UnirEquipo(int entrenador)
+        {
+            if (entrenador == 1)
+            {
+                return new Entrenador()
+                {
+                    Nombre = txtnombre1.Text,
+                    Equipo = equipo1
+                };
+            }
+            else
+            {
+                return new Entrenador()
+                {
+                    Nombre = txtnombre2.Text,
+                    Equipo = equipo2
+                };
+            }
+        }
+
+        private void Cerrar(object sender, EventArgs e)
+        {
+            this.Show();
+            Equipo1.Items.Clear();
+            equipo1.Clear();
+            Equipo2.Items.Clear();
+            equipo2.Clear();
+            player.PlayLooping();
+        }
+
         private void btnbatalla_Click(object sender, EventArgs e)
         {
             if(Equipo1.Items.Count == 3 && Equipo2.Items.Count == 3)
             {
-
+                if (txtnombre1.Text.Trim() != "" && txtnombre2.Text.Trim() != "")
+                {
+                    Combate form = new Combate();
+                    form.entrenador1 = UnirEquipo(1);
+                    form.entrenador2 = UnirEquipo(2);
+                    form.Show();
+                    this.Hide();
+                    //player.Stop();
+                    form.FormClosed += Cerrar;
+                }
+                else
+                {
+                    MessageBox.Show("Los entrenadores deben tener un nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
             {
@@ -183,13 +232,17 @@ namespace ProyectoPrograI
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
-        {
+        { 
+            Pokemon del = equipo1.Find(p => p.Nombre == Equipo1.Text);
+            equipo1.Remove(del);
             Equipo1.Items.Remove(Equipo1.Text);
         }
 
         private void btneliminar2_Click(object sender, EventArgs e)
-        {
+        {  
+            Pokemon del = equipo2.Find(p => p.Nombre == Equipo2.Text);
             Equipo2.Items.Remove(Equipo2.Text);
+            equipo2.Remove(del);
         }
     }
 }

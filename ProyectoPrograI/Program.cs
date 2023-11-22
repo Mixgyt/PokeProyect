@@ -16,7 +16,7 @@ namespace ProyectoPrograI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EleccionPokemon());
+            Application.Run(new Inicio());
         }
     }
 }

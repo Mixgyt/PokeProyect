@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -39,9 +41,6 @@
     <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="LibVLCSharp, Version=3.8.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\LibVLCSharp.3.8.2\lib\net471\LibVLCSharp.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="SmoothProgressBar">
@@ -52,15 +51,15 @@
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -81,6 +80,18 @@
     </Compile>
     <Compile Include="EleccionPokemon.Designer.cs">
       <DependentUpon>EleccionPokemon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Combate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Combate.designer.cs">
+      <DependentUpon>Combate.cs</DependentUpon>
     </Compile>
     <Compile Include="Pokemons\Ataques\Agua\Chorro de Agua.cs" />
     <Compile Include="Pokemons\Ataques\Electrico\Chispazo.cs" />
@@ -144,12 +155,6 @@
     <Compile Include="Recursos\Creditos.Designer.cs">
       <DependentUpon>Creditos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Seleccion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Seleccion.Designer.cs">
-      <DependentUpon>Seleccion.cs</DependentUpon>
-    </Compile>
     <Compile Include="CambiarPokemon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +170,12 @@
     <Compile Include="TestResources\Entrenadores.cs" />
     <EmbeddedResource Include="EleccionPokemon.resx">
       <DependentUpon>EleccionPokemon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Combate.resx">
+      <DependentUpon>Combate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pokedex.resx">
       <DependentUpon>Pokedex.cs</DependentUpon>
@@ -199,8 +210,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pokeball_ico.ico" />
+    <Content Include="Recursos\Imagenes\fondoEleccion.jpg" />
+    <Content Include="Recursos\Imagenes\fondo_combate.png" />
+    <Content Include="Recursos\Imagenes\Logo-Pokemon.png" />
+    <Content Include="Recursos\Imagenes\poke_bola.png" />
+    <Content Include="Recursos\Imagenes\poke_bola_invertida.png" />
     <Content Include="Recursos\paper.ico" />
-    <Content Include="Recursos\pokeball.png" />
+    <Content Include="Recursos\Imagenes\pokeball.png" />
     <Content Include="Recursos\pokeball_ico.ico" />
     <Content Include="Recursos\Pokemons\Blastoise.png" />
     <Content Include="Recursos\Pokemons\Bulbasaur.png" />
@@ -210,6 +226,9 @@
     <Content Include="Recursos\Pokemons\Magnemite.png" />
     <Content Include="Recursos\Pokemons\Missingno.png" />
     <Content Include="Recursos\Pokemons\Pikachu.png" />
+    <Content Include="Recursos\Sonidos\sonido_eleccion.wav" />
+    <Content Include="Recursos\Sonidos\sonido_combate.wav" />
+    <Content Include="Recursos\Sonidos\sonido_Principal.wav" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
