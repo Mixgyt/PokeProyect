@@ -271,7 +271,7 @@ namespace ProyectoPrograI
         }
         private void CambiarPoke1Bt_Click(object sender, EventArgs e)
         {
-            SeleccionPokemon form = new SeleccionPokemon();
+            CambiarPokemon form = new CambiarPokemon();
             form.entrenador = entrenador1;
             var result = form.ShowDialog();
 
@@ -288,7 +288,7 @@ namespace ProyectoPrograI
 
         private void CambiarPoke2Bt_Click(object sender, EventArgs e)
         {
-            SeleccionPokemon form = new SeleccionPokemon();
+            CambiarPokemon form = new CambiarPokemon();
             form.entrenador = entrenador2;
             var result = form.ShowDialog();
 

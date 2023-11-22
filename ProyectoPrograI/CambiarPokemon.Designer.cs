@@ -1,6 +1,6 @@
 ﻿namespace ProyectoPrograI
 {
-    partial class SeleccionPokemon
+    partial class CambiarPokemon
     {
         /// <summary>
         /// Required designer variable.

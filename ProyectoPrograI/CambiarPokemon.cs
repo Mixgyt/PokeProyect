@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograI
 {
-    partial class SeleccionPokemon : Form
+    partial class CambiarPokemon : Form
     {
         public Entrenador entrenador { get; set; }
         public Pokemon pokemonSeleccionado { get; set; }
 
-        public SeleccionPokemon()
+        public CambiarPokemon()
         {
             InitializeComponent();
         }

@@ -15,10 +15,5 @@ namespace Pokemons
         public List<Ataque> Ataques { get; set;}
         public List<Tipos> Debilidad { get; set; }
         public Bitmap Imagen { get; set; }
-
-        public void atacar()
-        {
-
-        }
     }
 }

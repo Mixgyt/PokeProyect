@@ -76,6 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entrenador.cs" />
+    <Compile Include="EleccionPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EleccionPokemon.Designer.cs">
+      <DependentUpon>EleccionPokemon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pokemons\Ataques\Agua\Chorro de Agua.cs" />
     <Compile Include="Pokemons\Ataques\Electrico\Chispazo.cs" />
     <Compile Include="Pokemons\Ataques\Roca\Roca Afilada.cs" />
@@ -132,11 +138,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SeleccionPokemon.cs">
+    <Compile Include="Recursos\Creditos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SeleccionPokemon.Designer.cs">
-      <DependentUpon>SeleccionPokemon.cs</DependentUpon>
+    <Compile Include="Recursos\Creditos.Designer.cs">
+      <DependentUpon>Creditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleccion.Designer.cs">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPokemon.Designer.cs">
+      <DependentUpon>CambiarPokemon.cs</DependentUpon>
     </Compile>
     <Compile Include="TestBatalla.cs">
       <SubType>Form</SubType>
@@ -145,6 +163,9 @@
       <DependentUpon>TestBatalla.cs</DependentUpon>
     </Compile>
     <Compile Include="TestResources\Entrenadores.cs" />
+    <EmbeddedResource Include="EleccionPokemon.resx">
+      <DependentUpon>EleccionPokemon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pokedex.resx">
       <DependentUpon>Pokedex.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,8 +174,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SeleccionPokemon.resx">
-      <DependentUpon>SeleccionPokemon.cs</DependentUpon>
+    <EmbeddedResource Include="Recursos\Creditos.resx">
+      <DependentUpon>Creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarPokemon.resx">
+      <DependentUpon>CambiarPokemon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestBatalla.resx">
       <DependentUpon>TestBatalla.cs</DependentUpon>
@@ -175,6 +199,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pokeball_ico.ico" />
+    <Content Include="Recursos\paper.ico" />
     <Content Include="Recursos\pokeball.png" />
     <Content Include="Recursos\pokeball_ico.ico" />
     <Content Include="Recursos\Pokemons\Blastoise.png" />
