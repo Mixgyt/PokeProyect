@@ -13,6 +13,7 @@ using ProyectoPrograI.Properties;
 using System.Windows.Controls;
 using System.Threading;
 using System.Media;
+using System.Diagnostics.Eventing.Reader;
 
 namespace ProyectoPrograI
 {
@@ -107,12 +108,40 @@ namespace ProyectoPrograI
                     Equipo = equipo1
                 };
             }
-            else
+            else if(entrenador == 2)
             {
                 return new Entrenador()
                 {
                     Nombre = txtnombre2.Text,
                     Equipo = equipo2
+                };
+            }
+            else if(entrenador == 3)
+            {
+                equipo1.Remove(equipo1[0]);
+                equipo1.Add(new Magnemite());
+                return new Entrenador()
+                {
+                    Nombre = txtnombre1.Text,
+                    Equipo = equipo1
+                };
+            }
+            else if(entrenador == 4)
+            {
+                equipo2.Remove(equipo2[0]);
+                equipo2.Add(new Magnemite());
+                return new Entrenador()
+                {
+                    Nombre = txtnombre2.Text,
+                    Equipo = equipo2
+                };
+            }
+            else
+            {
+                return new Entrenador()
+                {
+                    Nombre = txtnombre1.Text,
+                    Equipo = equipo1
                 };
             }
         }
@@ -131,7 +160,34 @@ namespace ProyectoPrograI
         {
             if(Equipo1.Items.Count == 3 && Equipo2.Items.Count == 3)
             {
-                if (txtnombre1.Text.Trim() != "" && txtnombre2.Text.Trim() != "")
+                if(txtnombre1.Text.Trim().ToLower() == "magnemite" && txtnombre2.Text.Trim().ToLower() == "magnemite")
+                {
+                    Combate form = new Combate();
+                    form.entrenador1 = UnirEquipo(3);
+                    form.entrenador2 = UnirEquipo(4);
+                    form.Show();
+                    this.Hide();
+                    form.FormClosed += Cerrar;
+                }
+                else if(txtnombre1.Text.Trim().ToLower() == "magnemite")
+                {
+                    Combate form = new Combate();
+                    form.entrenador1 = UnirEquipo(3);
+                    form.entrenador2 = UnirEquipo(2);
+                    form.Show();
+                    this.Hide();
+                    form.FormClosed += Cerrar;
+                }
+                else if (txtnombre2.Text.Trim().ToLower() == "magnemite")
+                {
+                    Combate form = new Combate();
+                    form.entrenador1 = UnirEquipo(1);
+                    form.entrenador2 = UnirEquipo(4);
+                    form.Show();
+                    this.Hide();
+                    form.FormClosed += Cerrar;
+                }
+                else if (txtnombre1.Text.Trim() != "" && txtnombre2.Text.Trim() != "")
                 {
                     Combate form = new Combate();
                     form.entrenador1 = UnirEquipo(1);

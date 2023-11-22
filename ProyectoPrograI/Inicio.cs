@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoPrograI.Properties;
+using ProyectoPrograI.Recursos;
 
 namespace ProyectoPrograI
 {
@@ -47,6 +48,10 @@ namespace ProyectoPrograI
 
         }
 
-
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Creditos form = new Creditos();
+            form.ShowDialog();
+        }
     }
 }
