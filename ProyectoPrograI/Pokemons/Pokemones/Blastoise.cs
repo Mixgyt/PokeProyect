@@ -1,0 +1,34 @@
+﻿using ProyectoPrograI.Properties;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Pokemons.Ataques;
+
+namespace Pokemons.Pokemones
+{
+    class Blastoise : Agua
+    {
+        public Blastoise()
+        {
+            Nombre = "Blastoise";
+            Stats = new Estadisticas()
+            {
+                ps = 76,
+                vida = 76,
+                ataque = 50,
+                defensa = 60,
+                velocidad = 78
+            };
+            Ataques = new List<Ataque>
+            {
+                new Empapar(),
+                new Chorro_de_Agua(),
+                new Hidropulso(),
+                new Hidrovapor()
+            };
+            Imagen = Resources.Blastoise;
+        }
+    }
+}

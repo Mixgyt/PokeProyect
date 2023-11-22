@@ -7,11 +7,13 @@
     <ProjectGuid>{274D80AA-9302-445A-8ADC-649CDD6A10C6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ProyectoPrograI</RootNamespace>
-    <AssemblyName>ProyectoPrograI</AssemblyName>
+    <AssemblyName>Poke Proyect</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +34,34 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pokeball_ico.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SmoothProgressBar">
+      <HintPath>..\..\..\..\Downloads\SmoothProgressBar.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,32 +71,130 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entrenador.cs" />
+    <Compile Include="EleccionPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EleccionPokemon.Designer.cs">
+      <DependentUpon>EleccionPokemon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio.Designer.cs">
+    <Compile Include="Inicio.designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pokemons\Ataques.cs" />
+    <Compile Include="Combate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Combate.designer.cs">
+      <DependentUpon>Combate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pokemons\Ataques\Agua\Chorro de Agua.cs" />
+    <Compile Include="Pokemons\Ataques\Electrico\Chispazo.cs" />
+    <Compile Include="Pokemons\Ataques\Roca\Roca Afilada.cs" />
+    <Compile Include="Pokemons\Ataques\Roca\Rompe Roca.cs" />
+    <Compile Include="Pokemons\Ataques\Tierra\Bofeton Lodo.cs" />
+    <Compile Include="Pokemons\Ataques\Derribo.cs" />
+    <Compile Include="Pokemons\Ataques\Electrico\Altovoltaje.cs" />
+    <Compile Include="Pokemons\Ataques\Electrico\Electrotela.cs" />
+    <Compile Include="Pokemons\Ataques\Agua\Empapar.cs" />
+    <Compile Include="Pokemons\Ataques\Fuego\Fuego Fatuo.cs" />
+    <Compile Include="Pokemons\Ataques\Electrico\Impactrueno.cs" />
+    <Compile Include="Pokemons\Ataques\Electrico\Electrobola.cs" />
+    <Compile Include="Pokemons\Ataques\Fuego\Ascuas.cs" />
+    <Compile Include="Pokemons\Ataques\Agua\Hidropulso.cs" />
+    <Compile Include="Pokemons\Ataques\Agua\Hidrovapor.cs" />
+    <Compile Include="Pokemons\Ataques\Tierra\Fuerza Telurica.cs" />
+    <Compile Include="Pokemons\Ataques\Hierva\Hoja Afilada.cs" />
+    <Compile Include="Pokemons\Ataques\Hierva\Latigo Cepa.cs" />
+    <Compile Include="Pokemons\Ataques\Fuego\LLamarada.cs" />
+    <Compile Include="Pokemons\Ataques\Fuego\Nitrocarga.cs" />
+    <Compile Include="Pokemons\Ataques\Tierra\Pataleta.cs" />
+    <Compile Include="Pokemons\Ataques\Placaje.cs" />
+    <Compile Include="Pokemons\Ataques\Tierra\Terremoto.cs" />
+    <Compile Include="Pokemons\Ataques\Roca\Pedrada.cs" />
+    <Compile Include="Pokemons\Pokemones.cs" />
+    <Compile Include="Pokedex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pokedex.Designer.cs">
+      <DependentUpon>Pokedex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Batalla.cs" />
+    <Compile Include="Pokemons\Pokemones\Blastoise.cs" />
+    <Compile Include="Pokemons\Pokemones\Bulbasaur.cs" />
+    <Compile Include="Pokemons\Pokemones\Charizard.cs" />
+    <Compile Include="Pokemons\Pokemones\Diglett.cs" />
+    <Compile Include="Pokemons\Pokemones\Geodude.cs" />
+    <Compile Include="Pokemons\Pokemones\Magnemite.cs" />
+    <Compile Include="Pokemons\Pokemones\Pikachu.cs" />
+    <Compile Include="Pokemons\Tipos\Agua.cs" />
+    <Compile Include="Pokemons\Ataque.cs" />
+    <Compile Include="Pokemons\Tipos\Electrico.cs" />
     <Compile Include="Pokemons\Estadisticas.cs" />
+    <Compile Include="Pokemons\Tipos\Fuego.cs" />
     <Compile Include="Pokemons\Pokemon.cs" />
+    <Compile Include="Pokemons\Tipos\Hierva.cs" />
+    <Compile Include="Pokemons\Tipos\Roca.cs" />
+    <Compile Include="Pokemons\Tipos\Tierra.cs" />
     <Compile Include="Pokemons\Tipos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\Creditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursos\Creditos.Designer.cs">
+      <DependentUpon>Creditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPokemon.Designer.cs">
+      <DependentUpon>CambiarPokemon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestBatalla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestBatalla.Designer.cs">
+      <DependentUpon>TestBatalla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestResources\Entrenadores.cs" />
+    <EmbeddedResource Include="EleccionPokemon.resx">
+      <DependentUpon>EleccionPokemon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Combate.resx">
+      <DependentUpon>Combate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pokedex.resx">
+      <DependentUpon>Pokedex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Recursos\Creditos.resx">
+      <DependentUpon>Creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarPokemon.resx">
+      <DependentUpon>CambiarPokemon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestBatalla.resx">
+      <DependentUpon>TestBatalla.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -83,5 +208,28 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="pokeball_ico.ico" />
+    <Content Include="Recursos\Imagenes\fondoEleccion.jpg" />
+    <Content Include="Recursos\Imagenes\fondo_combate.png" />
+    <Content Include="Recursos\Imagenes\Logo-Pokemon.png" />
+    <Content Include="Recursos\Imagenes\poke_bola.png" />
+    <Content Include="Recursos\Imagenes\poke_bola_invertida.png" />
+    <Content Include="Recursos\paper.ico" />
+    <Content Include="Recursos\Imagenes\pokeball.png" />
+    <Content Include="Recursos\pokeball_ico.ico" />
+    <Content Include="Recursos\Pokemons\Blastoise.png" />
+    <Content Include="Recursos\Pokemons\Bulbasaur.png" />
+    <Content Include="Recursos\Pokemons\Charizard.png" />
+    <Content Include="Recursos\Pokemons\Diglett.png" />
+    <Content Include="Recursos\Pokemons\Geodude.png" />
+    <Content Include="Recursos\Pokemons\Magnemite.png" />
+    <Content Include="Recursos\Pokemons\Missingno.png" />
+    <Content Include="Recursos\Pokemons\Pikachu.png" />
+    <Content Include="Recursos\Sonidos\sonido_eleccion.wav" />
+    <Content Include="Recursos\Sonidos\sonido_combate.wav" />
+    <Content Include="Recursos\Sonidos\sonido_Principal.wav" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
